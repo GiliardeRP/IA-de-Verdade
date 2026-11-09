@@ -1,0 +1,42 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'Space Grotesk';src:url('../assets/fonts/space-grotesk-400-latin.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Space Grotesk';src:url('../assets/fonts/space-grotesk-600-latin.woff2') format('woff2');font-weight:600}
+@font-face{font-family:'Space Grotesk';src:url('../assets/fonts/space-grotesk-700-latin.woff2') format('woff2');font-weight:700}
+@font-face{font-family:'JetBrains Mono';src:url('../assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2');font-weight:400}
+*{box-sizing:border-box;margin:0}
+body{width:1200px;height:630px;background:#0b0e12;color:#f3f5f7;font-family:'Space Grotesk',sans-serif;overflow:hidden;position:relative}
+.bar{position:absolute;left:0;top:0;bottom:0;width:10px;background:#2f6bff}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px);background-size:100% 78px;pointer-events:none}
+.copy{position:absolute;left:78px;top:66px;width:620px}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.18em;color:#9aa6b6;text-transform:uppercase}
+h1{font-size:56px;line-height:1.02;letter-spacing:-.035em;font-weight:600;margin-top:28px}
+h1 em{font-style:normal;color:#6f9bff}
+.sub{margin-top:24px;font-size:19px;line-height:1.45;color:#c3cad4;max-width:560px}
+.meta{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap}
+.chip{border:1px solid rgba(255,255,255,.18);padding:8px 12px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.06em;color:#cfd6df}
+.chip b{color:#fff;font-weight:400}
+.author{position:absolute;left:80px;bottom:44px;font-size:15px;color:#9aa6b6}
+.author b{color:#f3f5f7;font-weight:500}
+.covers{position:absolute;right:24px;top:70px;width:390px;height:500px}
+.cover{position:absolute;width:190px;box-shadow:0 30px 60px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08)}
+.c1{left:105px;top:14px;z-index:3;transform:rotate(2.5deg)}
+.c2{left:0;top:62px;z-index:2;transform:rotate(-5deg);width:172px}
+.c3{left:210px;top:100px;z-index:1;transform:rotate(7deg);width:165px}
+.badge{position:absolute;right:34px;bottom:36px;background:#2f6bff;color:#fff;padding:10px 14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;z-index:5}
+</style></head><body>
+<div class="bar"></div><div class="grid"></div>
+<div class="copy">
+ <div class="eyebrow">Coleção IA de Verdade · Edição nov/2026</div>
+ <h1>Do prompt ao servidor, <em>sem pular etapas.</em></h1>
+ <p class="sub">Seis volumes, 89 capítulos e um projeto que atravessa a coleção: o Assistente Casa.</p>
+ <div class="meta"><span class="chip"><b>6</b> volumes</span><span class="chip"><b>89</b> capítulos</span><span class="chip"><b>1.323</b> skills catalogadas</span><span class="chip">PDF + XLSX</span></div>
+</div>
+<div class="covers">
+ <img class="cover c2" src="../assets/covers/capa-02-oficial.webp" alt="">
+ <img class="cover c3" src="../assets/covers/capa-03-oficial.webp" alt="">
+ <img class="cover c1" src="../assets/covers/capa-01-oficial.webp" alt="">
+</div>
+<div class="author"><b>Giliarde Reis Pereira</b> · Tech Lead Backend</div>
+<div class="badge">pdf · planilha</div>
+</body></html>

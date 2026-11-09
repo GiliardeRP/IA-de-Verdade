@@ -1,0 +1,6 @@
+[
+  {"nome":"Leitor A","perfil":"Desenvolvedor","texto":"Depoimento fictício usado apenas no teste automatizado do componente.","data":"2026-11-01","autorizado":true},
+  {"nome":"Leitor B","perfil":"Analista","texto":"Segundo depoimento fictício, nunca publicado no build.","data":"2026-11-02","autorizado":true},
+  {"nome":"Leitor C","perfil":"Gestor","texto":"Terceiro item fictício para testar setas e pausa.","data":"2026-11-03","autorizado":true},
+  {"nome":"Sem autorização","perfil":"Teste","texto":"Este item não deve aparecer.","data":"2026-11-04","autorizado":false}
+]

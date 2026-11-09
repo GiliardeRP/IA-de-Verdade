@@ -1,0 +1,56 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'Space Grotesk';src:url('../assets/fonts/space-grotesk-400-latin.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Space Grotesk';src:url('../assets/fonts/space-grotesk-600-latin.woff2') format('woff2');font-weight:600}
+@font-face{font-family:'JetBrains Mono';src:url('../assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2');font-weight:400}
+*{box-sizing:border-box}
+html,body{margin:0;background:#e9e7e1;font-family:'Space Grotesk',sans-serif;color:#1b2026}
+.window{width:1600px;height:860px;background:#fff;overflow:hidden;border:1px solid #c9c5ba}
+.titlebar{height:56px;display:flex;align-items:center;gap:14px;padding:0 24px;border-bottom:1px solid #dcd8cd;background:#f7f6f2}
+.doc{width:26px;height:32px;border:1px solid #c9c5ba;background:#fff;position:relative}
+.doc:before{content:'';position:absolute;right:-1px;top:-1px;border-left:9px solid transparent;border-bottom:9px solid #c9c5ba}
+.title{font-size:15px;font-weight:600}
+.sub{font-size:12px;color:#77726a;font-family:'JetBrains Mono',monospace}
+.pill{margin-left:auto;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #cfcbc0;padding:6px 10px;color:#6d6860;border-radius:2px}
+.toolbar{height:46px;display:flex;align-items:center;gap:18px;padding:0 24px;border-bottom:1px solid #dcd8cd;background:#fbfaf7;font-size:12px;color:#6d6860}
+.toolbar b{color:#1b2026;font-weight:600}
+.sheet{position:relative;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:12.5px;table-layout:fixed}
+col.c-id{width:88px}col.c-name{width:210px}col.c-cat{width:172px}col.c-sub{width:190px}col.c-repo{width:230px}col.c-lic{width:120px}col.c-rank{width:72px}col.c-stars{width:88px}col.c-status{width:390px}
+thead th{background:#f1efe9;border:1px solid #ddd9ce;font-weight:600;text-align:left;padding:0;height:26px;position:relative}
+thead th span.letter{display:block;font-size:10px;font-weight:400;color:#8b867d;text-align:center;background:#e9e6de;border-bottom:1px solid #ddd9ce;line-height:18px}
+thead th span.h{display:block;padding:5px 8px;font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+tbody td{border:1px solid #e6e2d8;padding:7px 8px;height:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:middle}
+tbody tr:nth-child(even) td{background:#fcfbf8}
+td.mono{font-family:'JetBrains Mono',monospace;font-size:11px;color:#4a5563}
+td.name{font-weight:600;font-size:12px}
+td.muted{color:#6d6860;font-size:11.5px}
+td.num{text-align:right;font-family:'JetBrains Mono',monospace;font-size:11px}
+td.lic{font-size:11px}
+td.status{font-size:11px;color:#4d6b50}
+.rowhead{width:34px;background:#f1efe9;border:1px solid #ddd9ce;text-align:center;font-family:'JetBrains Mono',monospace;font-size:10px;color:#8b867d}
+.tabs{display:flex;gap:2px;padding:8px 20px 0;background:#f7f6f2;border-top:1px solid #dcd8cd;position:absolute;bottom:0;left:0;right:0}
+.tab{font-size:12px;padding:7px 18px;border:1px solid #dcd8cd;border-bottom:none;background:#efede6;color:#6d6860;border-radius:2px 2px 0 0}
+.tab.active{background:#fff;color:#1b2026;font-weight:600;box-shadow:inset 0 2px 0 #1f6feb}
+.count{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:11px;color:#8b867d;padding:8px 6px}
+</style></head><body>
+<div class="window">
+ <div class="titlebar"><div class="doc"></div><div><div class="title">CatalogoSkills.xlsx</div><div class="sub">Catalogo · 1.323 registros · 20 colunas</div></div><div class="pill">Somente leitura</div></div>
+ <div class="toolbar"><span><b>A1</b></span><span>ID</span><span>Inspeção estática: 2026-10-29</span><span style="margin-left:auto">1.323 linhas</span></div>
+ <div class="sheet">
+  <table id="t"><colgroup><col style="width:34px"><col class="c-id"><col class="c-name"><col class="c-cat"><col class="c-sub"><col class="c-repo"><col class="c-lic"><col class="c-rank"><col class="c-stars"><col class="c-status"></colgroup>
+  <thead><tr id="head"></tr></thead><tbody id="body"></tbody></table>
+  <div class="tabs"><div class="tab active">Catalogo</div><div class="tab">Categorias</div><div class="tab">Combos</div><div class="tab">Licencas</div><div class="count">colunas A–T · 4 abas</div></div>
+ </div>
+</div>
+<script>
+const cols=[['ID','ID','id'],['Nome','Nome','name'],['Categoria principal','Categoria','cat'],['Subcategoria','Subcategoria','sub'],['Nome do repositório','Repositório','repo'],['Licença','Licença','lic'],['Ranking','Rank','num'],['Stars','Stars','num'],['Status de validação','Validação','status']];
+fetch('rows.json').then(r=>r.json()).then(rows=>{
+ const letters='ABCDEFGHIJKLMNOPQRST'.split('');
+ document.getElementById('head').innerHTML='<th class="rowhead"></th>'+cols.map((c,i)=>`<th><span class="letter">${letters[i]}</span><span class="h">${c[1]}</span></th>`).join('');
+ document.getElementById('body').innerHTML=rows.map((r,i)=>`<tr><td class="rowhead">${i+2}</td>`+cols.map(c=>{
+   let v=r[c[0]]||''; if(c[2]==='status') v='Aprovada · link HTTP 200'; if(c[2]==='num'&&c[0]==='Stars') v=Number(v).toLocaleString('pt-BR');
+   if(c[2]==='lic') v=v.replace('; skill traz LICENSE próprio',' + LICENSE');
+   return `<td class="${c[2]}">${v.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</td>`}).join('')+'</tr>').join('');
+});
+</script></body></html>

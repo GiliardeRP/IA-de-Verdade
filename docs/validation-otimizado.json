@@ -1,0 +1,756 @@
+{
+  "base": "http://127.0.0.1:8093",
+  "generatedAt": "2026-11-06T19:12:48.571Z",
+  "viewports": {
+    "320": {
+      "errors": [],
+      "failures": [],
+      "height": 14374,
+      "words": 1569,
+      "sections": 12,
+      "images": 23,
+      "firstFold": 1,
+      "buyButtons": 11,
+      "buttonsSmall": [],
+      "small": [
+        {
+          "text": "IA",
+          "size": "11px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "04",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "05",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "06",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "Planilha XLSX · 1.323 skills · 20 colunas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "PDF · 166 páginas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 1",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 2",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 3",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Catálogo",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Arraste para explorar · pausa ao interagir",
+          "size": "12.5px",
+          "cls": "carousel__hint"
+        },
+        {
+          "text": "IA",
+          "size": "11px",
+          "cls": "brand__mark"
+        }
+      ],
+      "overflow": 0,
+      "dup": [],
+      "missingAnchors": [],
+      "h1": 1,
+      "schemaTypes": [
+        "Product",
+        "Person",
+        "FAQPage"
+      ],
+      "faqCount": 8,
+      "testimonials": false,
+      "imagesBad": 0
+    },
+    "360": {
+      "errors": [],
+      "failures": [],
+      "height": 13704,
+      "words": 1569,
+      "sections": 12,
+      "images": 23,
+      "firstFold": 3,
+      "buyButtons": 11,
+      "buttonsSmall": [],
+      "small": [
+        {
+          "text": "IA",
+          "size": "11px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "04",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "05",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "06",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "Planilha XLSX · 1.323 skills · 20 colunas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "PDF · 166 páginas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 1",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 2",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 3",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Catálogo",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Arraste para explorar · pausa ao interagir",
+          "size": "12.5px",
+          "cls": "carousel__hint"
+        },
+        {
+          "text": "IA",
+          "size": "11px",
+          "cls": "brand__mark"
+        }
+      ],
+      "overflow": 0,
+      "dup": [],
+      "missingAnchors": [],
+      "h1": 1,
+      "schemaTypes": [
+        "Product",
+        "Person",
+        "FAQPage"
+      ],
+      "faqCount": 8,
+      "testimonials": false,
+      "imagesBad": 0
+    },
+    "390": {
+      "errors": [],
+      "failures": [],
+      "height": 13444,
+      "words": 1573,
+      "sections": 12,
+      "images": 23,
+      "firstFold": 3,
+      "buyButtons": 11,
+      "buttonsSmall": [],
+      "small": [
+        {
+          "text": "IA",
+          "size": "11px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "Coleção técnica",
+          "size": "12px",
+          "cls": "brand__sub"
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "04",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "05",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "06",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "Planilha XLSX · 1.323 skills · 20 colunas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "PDF · 166 páginas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 1",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 2",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 3",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Catálogo",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Arraste para explorar · pausa ao interagir",
+          "size": "12.5px",
+          "cls": "carousel__hint"
+        },
+        {
+          "text": "IA",
+          "size": "11px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "Coleção técnica",
+          "size": "12px",
+          "cls": "brand__sub"
+        }
+      ],
+      "overflow": 0,
+      "dup": [],
+      "missingAnchors": [],
+      "h1": 1,
+      "schemaTypes": [
+        "Product",
+        "Person",
+        "FAQPage"
+      ],
+      "faqCount": 8,
+      "testimonials": false,
+      "imagesBad": 0
+    },
+    "768": {
+      "errors": [],
+      "failures": [],
+      "height": 11585,
+      "words": 1625,
+      "sections": 12,
+      "images": 23,
+      "firstFold": 3,
+      "buyButtons": 11,
+      "buttonsSmall": [],
+      "small": [
+        {
+          "text": "IA",
+          "size": "12px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "Coleção técnica",
+          "size": "12.5px",
+          "cls": "brand__sub"
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "04",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "05",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "06",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "Planilha XLSX · 1.323 skills · 20 colunas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "PDF · 166 páginas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 1",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 2",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 3",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Catálogo",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Arraste para explorar · pausa ao interagir",
+          "size": "13px",
+          "cls": "carousel__hint"
+        },
+        {
+          "text": "IA",
+          "size": "12px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "Coleção técnica",
+          "size": "12.5px",
+          "cls": "brand__sub"
+        }
+      ],
+      "overflow": 0,
+      "dup": [],
+      "missingAnchors": [],
+      "h1": 1,
+      "schemaTypes": [
+        "Product",
+        "Person",
+        "FAQPage"
+      ],
+      "faqCount": 8,
+      "testimonials": false,
+      "imagesBad": 0
+    },
+    "1024": {
+      "errors": [],
+      "failures": [],
+      "height": 11859,
+      "words": 1625,
+      "sections": 12,
+      "images": 23,
+      "firstFold": 3,
+      "buyButtons": 11,
+      "buttonsSmall": [],
+      "small": [
+        {
+          "text": "IA",
+          "size": "12px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "Coleção técnica",
+          "size": "12.5px",
+          "cls": "brand__sub"
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "04",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "05",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "06",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "Planilha XLSX · 1.323 skills · 20 colunas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "PDF · 166 páginas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 1",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 2",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 3",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Catálogo",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Arraste para explorar · pausa ao interagir",
+          "size": "13px",
+          "cls": "carousel__hint"
+        },
+        {
+          "text": "IA",
+          "size": "12px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "Coleção técnica",
+          "size": "12.5px",
+          "cls": "brand__sub"
+        }
+      ],
+      "overflow": 0,
+      "dup": [],
+      "missingAnchors": [],
+      "h1": 1,
+      "schemaTypes": [
+        "Product",
+        "Person",
+        "FAQPage"
+      ],
+      "faqCount": 8,
+      "testimonials": false,
+      "imagesBad": 0
+    },
+    "1440": {
+      "errors": [],
+      "failures": [],
+      "height": 12353,
+      "words": 1635,
+      "sections": 12,
+      "images": 23,
+      "firstFold": 3,
+      "buyButtons": 11,
+      "buttonsSmall": [],
+      "small": [
+        {
+          "text": "IA",
+          "size": "12px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "Coleção técnica",
+          "size": "12.5px",
+          "cls": "brand__sub"
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "01",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "02",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "03",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "04",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "05",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "06",
+          "size": "12.5px",
+          "cls": ""
+        },
+        {
+          "text": "Planilha XLSX · 1.323 skills · 20 colunas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "PDF · 166 páginas",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 1",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 2",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Volume 3",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Catálogo",
+          "size": "13px",
+          "cls": ""
+        },
+        {
+          "text": "Arraste para explorar · pausa ao interagir",
+          "size": "13px",
+          "cls": "carousel__hint"
+        },
+        {
+          "text": "IA",
+          "size": "12px",
+          "cls": "brand__mark"
+        },
+        {
+          "text": "Coleção técnica",
+          "size": "12.5px",
+          "cls": "brand__sub"
+        }
+      ],
+      "overflow": 0,
+      "dup": [],
+      "missingAnchors": [],
+      "h1": 1,
+      "schemaTypes": [
+        "Product",
+        "Person",
+        "FAQPage"
+      ],
+      "faqCount": 8,
+      "testimonials": false,
+      "imagesBad": 0
+    }
+  },
+  "axe": [],
+  "menu": {
+    "open": true,
+    "closed": true
+  },
+  "lightbox": {
+    "open": true,
+    "img": 900,
+    "closed": true
+  },
+  "checkoutEmpty": {
+    "scrolled": true,
+    "toast": "Checkout em configuraçãoO link de compra ainda não foi publi"
+  },
+  "noJs": {
+    "h1": true,
+    "price": "R$ 197",
+    "cards": 6,
+    "opacity": "1"
+  }
+}

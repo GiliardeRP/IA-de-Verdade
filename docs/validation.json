@@ -1,0 +1,1152 @@
+{
+  "base": "http://127.0.0.1:8093",
+  "generatedAt": "2026-11-05T20:11:13.142Z",
+  "viewports": {
+    "desktop": {
+      "errors": [],
+      "failures": [],
+      "dup": [],
+      "missingAnchors": [],
+      "imgs": [
+        {
+          "src": "assets/covers/capa-01-oficial.webp",
+          "alt": "Capa do Volume 1 — Entendendo e usando IA"
+        },
+        {
+          "src": "assets/covers/capa-02-oficial.webp",
+          "alt": "Capa do Volume 2 — Construindo software com IA"
+        },
+        {
+          "src": "assets/covers/capa-03-oficial.webp",
+          "alt": "Capa do Volume 3 — Agentes, automações e IA aplicada"
+        },
+        {
+          "src": "assets/covers/capa-04-oficial.webp",
+          "alt": "Capa do Volume 4 — Manuais OpenClaw e DSH"
+        },
+        {
+          "src": "assets/covers/capa-05-oficial.webp",
+          "alt": "Capa do Volume 5 — Controle remoto e Home Lab"
+        },
+        {
+          "src": "assets/covers/capa-06-oficial.webp",
+          "alt": "Capa do Volume de Referência — Catálogo de Skills e Combos"
+        },
+        {
+          "src": "assets/covers/capa-catalogo-oficial.webp",
+          "alt": "Capa do Catálogo digital de Skills"
+        },
+        {
+          "src": "assets/covers/capa-01-oficial.webp",
+          "alt": "Capa do Volume 1 — Entendendo e usando IA"
+        },
+        {
+          "src": "assets/covers/capa-02-oficial.webp",
+          "alt": "Capa do Volume 2 — Construindo software com IA"
+        },
+        {
+          "src": "assets/covers/capa-03-oficial.webp",
+          "alt": "Capa do Volume 3 — Agentes, automações e IA aplicada"
+        },
+        {
+          "src": "assets/covers/capa-04-oficial.webp",
+          "alt": "Capa do Volume 4 — Manuais OpenClaw e DSH"
+        },
+        {
+          "src": "assets/covers/capa-05-oficial.webp",
+          "alt": "Capa do Volume 5 — Controle remoto e Home Lab"
+        },
+        {
+          "src": "assets/covers/capa-06-oficial.webp",
+          "alt": "Capa do Volume de Referência — Catálogo de Skills e Combos"
+        },
+        {
+          "src": "assets/pages/cat-skills-015.webp",
+          "alt": "Página real do catálogo com skills, repositórios e licenças"
+        },
+        {
+          "src": "assets/pages/cat-categorias-008.webp",
+          "alt": "Página real do catálogo com a tabela de categorias e subcategorias"
+        },
+        {
+          "src": "assets/catalog/planilha.webp",
+          "alt": "Amostra da planilha XLSX do catálogo com ID, nome, categoria, repositório, licença e validação"
+        },
+        {
+          "src": "assets/pages/v1-projeto-118.webp",
+          "alt": "Página 118 do Volume 1 com o projeto Contexto mestre do Assistente Casa"
+        },
+        {
+          "src": "assets/pages/v1-cap2-034.webp",
+          "alt": "Página 34 do Volume 1, abertura do capítulo 2 sobre como a IA funciona"
+        },
+        {
+          "src": "assets/pages/v2-cap20-062.webp",
+          "alt": "Página 62 do Volume 2, abertura do capítulo 20 sobre contexto de repositórios"
+        },
+        {
+          "src": "assets/pages/v3-cap35-022.webp",
+          "alt": "Página 22 do Volume 3, abertura do capítulo 35 sobre anatomia de um agente"
+        },
+        {
+          "src": "assets/pages/v4-cap51-036.webp",
+          "alt": "Página 36 do Volume 4, abertura do capítulo 51 sobre OpenClaw"
+        },
+        {
+          "src": "assets/pages/v5-cap77-048.webp",
+          "alt": "Página 48 do Volume 5, abertura do capítulo 77 sobre Tailscale"
+        },
+        {
+          "src": "assets/pages/v6-r2-020.webp",
+          "alt": "Página 20 do Volume de Referência com a seleção comentada de Skills"
+        },
+        {
+          "src": "assets/pages/cat-skills-015.webp",
+          "alt": "Página 15 do catálogo com skills"
+        },
+        {
+          "src": "assets/pages/cat-categorias-008.webp",
+          "alt": "Página 8 do catálogo com categorias e subcategorias"
+        },
+        {
+          "src": "assets/catalog/planilha.webp",
+          "alt": "Amostra da planilha do catálogo com registros, categorias e licenças"
+        },
+        {
+          "src": "assets/guia/guia-p1.webp",
+          "alt": "Página 1 do Guia da coleção e grade de conteúdo, com a grade dos seis volumes"
+        },
+        {
+          "src": "assets/guia/guia-p2.webp",
+          "alt": "Página 2 do Guia da coleção, com trilhas de leitura, diferenciais e formato de entrega"
+        },
+        {
+          "src": "assets/autor/giliarde.webp",
+          "alt": "Retrato de Giliarde Reis Pereira"
+        },
+        {
+          "src": "assets/covers/capa-01-oficial.webp",
+          "alt": "Capa — Entendendo e usando IA"
+        },
+        {
+          "src": "assets/covers/capa-02-oficial.webp",
+          "alt": "Capa — Construindo software com IA"
+        },
+        {
+          "src": "assets/covers/capa-03-oficial.webp",
+          "alt": "Capa — Agentes, automações e IA aplicada"
+        },
+        {
+          "src": "assets/covers/capa-04-oficial.webp",
+          "alt": "Capa — Manuais OpenClaw e DSH"
+        },
+        {
+          "src": "assets/covers/capa-05-oficial.webp",
+          "alt": "Capa — Controle remoto e Home Lab"
+        },
+        {
+          "src": "assets/covers/capa-06-oficial.webp",
+          "alt": "Capa — Referência"
+        },
+        {
+          "src": "assets/covers/capa-catalogo-oficial.webp",
+          "alt": "Capa — Catálogo digital de Skills"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Do prompt ao servidor, sem pular etapas."
+        },
+        {
+          "tag": "H2",
+          "text": "O problema raramente é falta de conteúdo. É falta de sequência."
+        },
+        {
+          "tag": "H3",
+          "text": "Prompt solto, resultado solto"
+        },
+        {
+          "tag": "H3",
+          "text": "Tutoriais que não conversam entre si"
+        },
+        {
+          "tag": "H3",
+          "text": "Agente parece outro nível"
+        },
+        {
+          "tag": "H3",
+          "text": "Programar com IA não é só pedir código"
+        },
+        {
+          "tag": "H3",
+          "text": "Home Lab sem mapa"
+        },
+        {
+          "tag": "H3",
+          "text": "Ferramenta demais, critério de menos"
+        },
+        {
+          "tag": "H2",
+          "text": "Uma linha de aprendizado. Não seis arquivos soltos."
+        },
+        {
+          "tag": "H3",
+          "text": "Progressão"
+        },
+        {
+          "tag": "H3",
+          "text": "Prática"
+        },
+        {
+          "tag": "H3",
+          "text": "Consulta"
+        },
+        {
+          "tag": "H3",
+          "text": "O Assistente Casa não é um exemplo solto."
+        },
+        {
+          "tag": "H2",
+          "text": "Seis volumes, uma biblioteca."
+        },
+        {
+          "tag": "H3",
+          "text": "Entendendo e usando IA"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Construindo software com IA"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Agentes, automações e IA aplicada"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Manuais OpenClaw e DSH"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Controle remoto e Home Lab"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Referência"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você encontra"
+        },
+        {
+          "tag": "H2",
+          "text": "A ordem importa."
+        },
+        {
+          "tag": "H3",
+          "text": "Entender"
+        },
+        {
+          "tag": "H3",
+          "text": "Construir"
+        },
+        {
+          "tag": "H3",
+          "text": "Automatizar"
+        },
+        {
+          "tag": "H3",
+          "text": "Operar"
+        },
+        {
+          "tag": "H3",
+          "text": "Infraestrutura"
+        },
+        {
+          "tag": "H3",
+          "text": "Consultar"
+        },
+        {
+          "tag": "H2",
+          "text": "1.323 skills para responder “qual ferramenta eu uso?”"
+        },
+        {
+          "tag": "H3",
+          "text": "Procurar no Google é fácil. Saber o que instalar não é."
+        },
+        {
+          "tag": "H2",
+          "text": "O material existe. Dá para ver antes de comprar."
+        },
+        {
+          "tag": "H2",
+          "text": "A coleção inteira, em duas páginas."
+        },
+        {
+          "tag": "H2",
+          "text": "Feito para quem quer construir. Não para quem quer assistir."
+        },
+        {
+          "tag": "H3",
+          "text": "✓ Faz sentido para você se…"
+        },
+        {
+          "tag": "H3",
+          "text": "× Não faz sentido se…"
+        },
+        {
+          "tag": "H2",
+          "text": "GiliardeReis Pereira"
+        },
+        {
+          "tag": "H2",
+          "text": "Quem já usou."
+        },
+        {
+          "tag": "H2",
+          "text": "A coleção completa."
+        },
+        {
+          "tag": "H3",
+          "text": "Coleção IA de Verdade"
+        },
+        {
+          "tag": "H4",
+          "text": "Você recebe 8 arquivos"
+        },
+        {
+          "tag": "H4",
+          "text": "O que está incluído"
+        },
+        {
+          "tag": "H3",
+          "text": "Um volume por vez."
+        },
+        {
+          "tag": "H4",
+          "text": "Entendendo e usando IA"
+        },
+        {
+          "tag": "H4",
+          "text": "Construindo software com IA"
+        },
+        {
+          "tag": "H4",
+          "text": "Agentes, automações e IA aplicada"
+        },
+        {
+          "tag": "H4",
+          "text": "Manuais OpenClaw e DSH"
+        },
+        {
+          "tag": "H4",
+          "text": "Controle remoto e Home Lab"
+        },
+        {
+          "tag": "H4",
+          "text": "Referência"
+        },
+        {
+          "tag": "H4",
+          "text": "Catálogo digital de Skills"
+        },
+        {
+          "tag": "H3",
+          "text": "Sete dias com o material em mãos."
+        },
+        {
+          "tag": "H2",
+          "text": "Antes de comprar."
+        },
+        {
+          "tag": "H2",
+          "text": "Se a IA já faz parte do seu dia, falta dar sequência."
+        },
+        {
+          "tag": "H3",
+          "text": "Navegação"
+        },
+        {
+          "tag": "H3",
+          "text": "Oferta"
+        },
+        {
+          "tag": "H3",
+          "text": "Informações"
+        },
+        {
+          "tag": "H2",
+          "text": "Cookies e medição"
+        },
+        {
+          "tag": "H3",
+          "text": "Página do material"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Comprar",
+          "w": 101,
+          "h": 48
+        },
+        {
+          "text": "Quero a coleção7 PDFs + planilha\n       ",
+          "w": 258,
+          "h": 61
+        },
+        {
+          "text": "Ver o que está incluído ↓",
+          "w": 271,
+          "h": 60
+        },
+        {
+          "text": "Quero o catálogo R$ 69,90",
+          "w": 276,
+          "h": 58
+        },
+        {
+          "text": "Baixar o guia em PDF",
+          "w": 216,
+          "h": 58
+        },
+        {
+          "text": "Abrir no navegador ↗",
+          "w": 228,
+          "h": 58
+        },
+        {
+          "text": "Perfil no LinkedIn ↗",
+          "w": 213,
+          "h": 58
+        },
+        {
+          "text": "Acesso imediatoComprar a coleção\n       ",
+          "w": 1106,
+          "h": 62
+        },
+        {
+          "text": "Comprar",
+          "w": 83,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 83,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 83,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 83,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 83,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 83,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 83,
+          "h": 44
+        },
+        {
+          "text": "Quero a coleção R$ 197",
+          "w": 251,
+          "h": 58
+        },
+        {
+          "text": "Ver volumes individuais ↓",
+          "w": 260,
+          "h": 58
+        }
+      ],
+      "small": [],
+      "checkouts": [
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "catalog",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "vol1",
+          "href": "#"
+        },
+        {
+          "offer": "vol2",
+          "href": "#"
+        },
+        {
+          "offer": "vol3",
+          "href": "#"
+        },
+        {
+          "offer": "vol4",
+          "href": "#"
+        },
+        {
+          "offer": "vol5",
+          "href": "#"
+        },
+        {
+          "offer": "vol6",
+          "href": "#"
+        },
+        {
+          "offer": "catalog",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "vol1Bump",
+          "href": "#"
+        },
+        {
+          "offer": "catalog",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        }
+      ],
+      "guarantee": false,
+      "hiddenTestimonials": true,
+      "overflow": 0,
+      "menu": null,
+      "faq": true,
+      "lightbox": {
+        "open": true,
+        "img": 900,
+        "closed": true
+      }
+    },
+    "mobile": {
+      "errors": [],
+      "failures": [],
+      "dup": [],
+      "missingAnchors": [],
+      "imgs": [
+        {
+          "src": "assets/covers/capa-01-oficial.webp",
+          "alt": "Capa do Volume 1 — Entendendo e usando IA"
+        },
+        {
+          "src": "assets/covers/capa-02-oficial.webp",
+          "alt": "Capa do Volume 2 — Construindo software com IA"
+        },
+        {
+          "src": "assets/covers/capa-03-oficial.webp",
+          "alt": "Capa do Volume 3 — Agentes, automações e IA aplicada"
+        },
+        {
+          "src": "assets/covers/capa-04-oficial.webp",
+          "alt": "Capa do Volume 4 — Manuais OpenClaw e DSH"
+        },
+        {
+          "src": "assets/covers/capa-05-oficial.webp",
+          "alt": "Capa do Volume 5 — Controle remoto e Home Lab"
+        },
+        {
+          "src": "assets/covers/capa-06-oficial.webp",
+          "alt": "Capa do Volume de Referência — Catálogo de Skills e Combos"
+        },
+        {
+          "src": "assets/covers/capa-catalogo-oficial.webp",
+          "alt": "Capa do Catálogo digital de Skills"
+        },
+        {
+          "src": "assets/covers/capa-01-oficial.webp",
+          "alt": "Capa do Volume 1 — Entendendo e usando IA"
+        },
+        {
+          "src": "assets/covers/capa-02-oficial.webp",
+          "alt": "Capa do Volume 2 — Construindo software com IA"
+        },
+        {
+          "src": "assets/covers/capa-03-oficial.webp",
+          "alt": "Capa do Volume 3 — Agentes, automações e IA aplicada"
+        },
+        {
+          "src": "assets/covers/capa-04-oficial.webp",
+          "alt": "Capa do Volume 4 — Manuais OpenClaw e DSH"
+        },
+        {
+          "src": "assets/covers/capa-05-oficial.webp",
+          "alt": "Capa do Volume 5 — Controle remoto e Home Lab"
+        },
+        {
+          "src": "assets/covers/capa-06-oficial.webp",
+          "alt": "Capa do Volume de Referência — Catálogo de Skills e Combos"
+        },
+        {
+          "src": "assets/pages/cat-skills-015.webp",
+          "alt": "Página real do catálogo com skills, repositórios e licenças"
+        },
+        {
+          "src": "assets/pages/cat-categorias-008.webp",
+          "alt": "Página real do catálogo com a tabela de categorias e subcategorias"
+        },
+        {
+          "src": "assets/catalog/planilha.webp",
+          "alt": "Amostra da planilha XLSX do catálogo com ID, nome, categoria, repositório, licença e validação"
+        },
+        {
+          "src": "assets/pages/v1-projeto-118.webp",
+          "alt": "Página 118 do Volume 1 com o projeto Contexto mestre do Assistente Casa"
+        },
+        {
+          "src": "assets/pages/v1-cap2-034.webp",
+          "alt": "Página 34 do Volume 1, abertura do capítulo 2 sobre como a IA funciona"
+        },
+        {
+          "src": "assets/pages/v2-cap20-062.webp",
+          "alt": "Página 62 do Volume 2, abertura do capítulo 20 sobre contexto de repositórios"
+        },
+        {
+          "src": "assets/pages/v3-cap35-022.webp",
+          "alt": "Página 22 do Volume 3, abertura do capítulo 35 sobre anatomia de um agente"
+        },
+        {
+          "src": "assets/pages/v4-cap51-036.webp",
+          "alt": "Página 36 do Volume 4, abertura do capítulo 51 sobre OpenClaw"
+        },
+        {
+          "src": "assets/pages/v5-cap77-048.webp",
+          "alt": "Página 48 do Volume 5, abertura do capítulo 77 sobre Tailscale"
+        },
+        {
+          "src": "assets/pages/v6-r2-020.webp",
+          "alt": "Página 20 do Volume de Referência com a seleção comentada de Skills"
+        },
+        {
+          "src": "assets/pages/cat-skills-015.webp",
+          "alt": "Página 15 do catálogo com skills"
+        },
+        {
+          "src": "assets/pages/cat-categorias-008.webp",
+          "alt": "Página 8 do catálogo com categorias e subcategorias"
+        },
+        {
+          "src": "assets/catalog/planilha.webp",
+          "alt": "Amostra da planilha do catálogo com registros, categorias e licenças"
+        },
+        {
+          "src": "assets/guia/guia-p1.webp",
+          "alt": "Página 1 do Guia da coleção e grade de conteúdo, com a grade dos seis volumes"
+        },
+        {
+          "src": "assets/guia/guia-p2.webp",
+          "alt": "Página 2 do Guia da coleção, com trilhas de leitura, diferenciais e formato de entrega"
+        },
+        {
+          "src": "assets/autor/giliarde.webp",
+          "alt": "Retrato de Giliarde Reis Pereira"
+        },
+        {
+          "src": "assets/covers/capa-01-oficial.webp",
+          "alt": "Capa — Entendendo e usando IA"
+        },
+        {
+          "src": "assets/covers/capa-02-oficial.webp",
+          "alt": "Capa — Construindo software com IA"
+        },
+        {
+          "src": "assets/covers/capa-03-oficial.webp",
+          "alt": "Capa — Agentes, automações e IA aplicada"
+        },
+        {
+          "src": "assets/covers/capa-04-oficial.webp",
+          "alt": "Capa — Manuais OpenClaw e DSH"
+        },
+        {
+          "src": "assets/covers/capa-05-oficial.webp",
+          "alt": "Capa — Controle remoto e Home Lab"
+        },
+        {
+          "src": "assets/covers/capa-06-oficial.webp",
+          "alt": "Capa — Referência"
+        },
+        {
+          "src": "assets/covers/capa-catalogo-oficial.webp",
+          "alt": "Capa — Catálogo digital de Skills"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Do prompt ao servidor, sem pular etapas."
+        },
+        {
+          "tag": "H2",
+          "text": "O problema raramente é falta de conteúdo. É falta de sequência."
+        },
+        {
+          "tag": "H3",
+          "text": "Prompt solto, resultado solto"
+        },
+        {
+          "tag": "H3",
+          "text": "Tutoriais que não conversam entre si"
+        },
+        {
+          "tag": "H3",
+          "text": "Agente parece outro nível"
+        },
+        {
+          "tag": "H3",
+          "text": "Programar com IA não é só pedir código"
+        },
+        {
+          "tag": "H3",
+          "text": "Home Lab sem mapa"
+        },
+        {
+          "tag": "H3",
+          "text": "Ferramenta demais, critério de menos"
+        },
+        {
+          "tag": "H2",
+          "text": "Uma linha de aprendizado. Não seis arquivos soltos."
+        },
+        {
+          "tag": "H3",
+          "text": "Progressão"
+        },
+        {
+          "tag": "H3",
+          "text": "Prática"
+        },
+        {
+          "tag": "H3",
+          "text": "Consulta"
+        },
+        {
+          "tag": "H3",
+          "text": "O Assistente Casa não é um exemplo solto."
+        },
+        {
+          "tag": "H2",
+          "text": "Seis volumes, uma biblioteca."
+        },
+        {
+          "tag": "H3",
+          "text": "Entendendo e usando IA"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Construindo software com IA"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Agentes, automações e IA aplicada"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Manuais OpenClaw e DSH"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Controle remoto e Home Lab"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você constrói"
+        },
+        {
+          "tag": "H3",
+          "text": "Referência"
+        },
+        {
+          "tag": "H4",
+          "text": "O que você encontra"
+        },
+        {
+          "tag": "H2",
+          "text": "A ordem importa."
+        },
+        {
+          "tag": "H3",
+          "text": "Entender"
+        },
+        {
+          "tag": "H3",
+          "text": "Construir"
+        },
+        {
+          "tag": "H3",
+          "text": "Automatizar"
+        },
+        {
+          "tag": "H3",
+          "text": "Operar"
+        },
+        {
+          "tag": "H3",
+          "text": "Infraestrutura"
+        },
+        {
+          "tag": "H3",
+          "text": "Consultar"
+        },
+        {
+          "tag": "H2",
+          "text": "1.323 skills para responder “qual ferramenta eu uso?”"
+        },
+        {
+          "tag": "H3",
+          "text": "Procurar no Google é fácil. Saber o que instalar não é."
+        },
+        {
+          "tag": "H2",
+          "text": "O material existe. Dá para ver antes de comprar."
+        },
+        {
+          "tag": "H2",
+          "text": "A coleção inteira, em duas páginas."
+        },
+        {
+          "tag": "H2",
+          "text": "Feito para quem quer construir. Não para quem quer assistir."
+        },
+        {
+          "tag": "H3",
+          "text": "✓ Faz sentido para você se…"
+        },
+        {
+          "tag": "H3",
+          "text": "× Não faz sentido se…"
+        },
+        {
+          "tag": "H2",
+          "text": "GiliardeReis Pereira"
+        },
+        {
+          "tag": "H2",
+          "text": "Quem já usou."
+        },
+        {
+          "tag": "H2",
+          "text": "A coleção completa."
+        },
+        {
+          "tag": "H3",
+          "text": "Coleção IA de Verdade"
+        },
+        {
+          "tag": "H4",
+          "text": "Você recebe 8 arquivos"
+        },
+        {
+          "tag": "H4",
+          "text": "O que está incluído"
+        },
+        {
+          "tag": "H3",
+          "text": "Um volume por vez."
+        },
+        {
+          "tag": "H4",
+          "text": "Entendendo e usando IA"
+        },
+        {
+          "tag": "H4",
+          "text": "Construindo software com IA"
+        },
+        {
+          "tag": "H4",
+          "text": "Agentes, automações e IA aplicada"
+        },
+        {
+          "tag": "H4",
+          "text": "Manuais OpenClaw e DSH"
+        },
+        {
+          "tag": "H4",
+          "text": "Controle remoto e Home Lab"
+        },
+        {
+          "tag": "H4",
+          "text": "Referência"
+        },
+        {
+          "tag": "H4",
+          "text": "Catálogo digital de Skills"
+        },
+        {
+          "tag": "H3",
+          "text": "Sete dias com o material em mãos."
+        },
+        {
+          "tag": "H2",
+          "text": "Antes de comprar."
+        },
+        {
+          "tag": "H2",
+          "text": "Se a IA já faz parte do seu dia, falta dar sequência."
+        },
+        {
+          "tag": "H3",
+          "text": "Navegação"
+        },
+        {
+          "tag": "H3",
+          "text": "Oferta"
+        },
+        {
+          "tag": "H3",
+          "text": "Informações"
+        },
+        {
+          "tag": "H2",
+          "text": "Cookies e medição"
+        },
+        {
+          "tag": "H3",
+          "text": "Página do material"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Comprar",
+          "w": 85,
+          "h": 44
+        },
+        {
+          "text": "",
+          "w": 46,
+          "h": 44
+        },
+        {
+          "text": "Quero a coleção7 PDFs + planilha\n       ",
+          "w": 350,
+          "h": 59
+        },
+        {
+          "text": "Ver o que está incluído ↓",
+          "w": 350,
+          "h": 58
+        },
+        {
+          "text": "Quero o catálogo R$ 69,90",
+          "w": 350,
+          "h": 58
+        },
+        {
+          "text": "Baixar o guia em PDF",
+          "w": 350,
+          "h": 58
+        },
+        {
+          "text": "Abrir no navegador ↗",
+          "w": 350,
+          "h": 58
+        },
+        {
+          "text": "Perfil no LinkedIn ↗",
+          "w": 213,
+          "h": 58
+        },
+        {
+          "text": "Acesso imediatoComprar a coleção\n       ",
+          "w": 312,
+          "h": 61
+        },
+        {
+          "text": "Comprar",
+          "w": 75,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 75,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 75,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 75,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 75,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 75,
+          "h": 44
+        },
+        {
+          "text": "Comprar",
+          "w": 75,
+          "h": 44
+        },
+        {
+          "text": "Quero a coleção R$ 197",
+          "w": 350,
+          "h": 58
+        },
+        {
+          "text": "Ver volumes individuais ↓",
+          "w": 350,
+          "h": 58
+        },
+        {
+          "text": "Quero a coleção",
+          "w": 150,
+          "h": 48
+        }
+      ],
+      "small": [],
+      "checkouts": [
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "catalog",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "vol1",
+          "href": "#"
+        },
+        {
+          "offer": "vol2",
+          "href": "#"
+        },
+        {
+          "offer": "vol3",
+          "href": "#"
+        },
+        {
+          "offer": "vol4",
+          "href": "#"
+        },
+        {
+          "offer": "vol5",
+          "href": "#"
+        },
+        {
+          "offer": "vol6",
+          "href": "#"
+        },
+        {
+          "offer": "catalog",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        },
+        {
+          "offer": "vol1Bump",
+          "href": "#"
+        },
+        {
+          "offer": "catalog",
+          "href": "#"
+        },
+        {
+          "offer": "collection",
+          "href": "#"
+        }
+      ],
+      "guarantee": false,
+      "hiddenTestimonials": true,
+      "overflow": 0,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "closedWithEscape": true
+      },
+      "faq": true,
+      "lightbox": {
+        "open": true,
+        "img": 900,
+        "closed": true
+      }
+    }
+  }
+}

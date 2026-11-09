@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Guia da Coleção e Grade — IA de Verdade</title>
+<meta name="author" content="Giliarde Reis Pereira">
+<style>
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;src:url('../assets/fonts/space-grotesk-400-latin.woff2') format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;src:url('../assets/fonts/space-grotesk-600-latin.woff2') format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;src:url('../assets/fonts/space-grotesk-700-latin.woff2') format('woff2')}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400;src:url('../assets/fonts/source-serif-4-400-latin.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;src:url('../assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2')}
+*{box-sizing:border-box}
+@page{size:A4;margin:0}
+html,body{margin:0;padding:0;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:'Space Grotesk',sans-serif;color:#1b201c}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;background:#f4f1e9}
+.page:last-child{page-break-after:auto}
+.page--dark{background:#0b0e12;color:#f3f5f7}
+.bar{position:absolute;left:0;top:0;bottom:0;width:4mm;background:#2a64f2}
+.mono{font-family:'JetBrains Mono',monospace;font-size:6.4pt;letter-spacing:.12em;text-transform:uppercase}
+/* ---------- capa ---------- */
+.cover{padding:14mm 15mm 0 19mm;height:106mm;position:relative}
+.brandline{display:flex;align-items:center;gap:3mm}
+.mark{width:9mm;height:9mm;background:#2a64f2;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:7pt;font-weight:700;letter-spacing:-.04em}
+.brandline b{display:block;font-size:11pt;font-weight:600;letter-spacing:-.02em;line-height:1}
+.brandline small{display:block;font-family:'JetBrains Mono',monospace;font-size:4.8pt;letter-spacing:.16em;color:#9aa6b6;margin-top:1mm}
+.edition{margin-left:auto;color:#9aa6b6;font-size:5.6pt}
+.kicker{margin:12mm 0 3mm 0;color:#6f9bff;font-size:6pt}
+h1{margin:0;font-size:27pt;line-height:1.02;letter-spacing:-.045em;font-weight:600;max-width:150mm}
+h1 em{font-style:normal;color:#6f9bff}
+.sub{margin:4mm 0 0;font-family:'Source Serif 4',serif;font-size:9.6pt;line-height:1.45;color:#c3cad4;max-width:135mm}
+.stats{display:flex;gap:0;margin-top:8mm;border-top:1px solid rgba(255,255,255,.18);padding-top:3.5mm}
+.stat{flex:1;border-right:1px solid rgba(255,255,255,.13);padding-right:3mm}
+.stat:not(:first-child){padding-left:3mm}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:15pt;line-height:1;letter-spacing:-.04em}
+.stat span{display:block;margin-top:1.2mm;font-family:'JetBrains Mono',monospace;font-size:4.7pt;letter-spacing:.08em;color:#9aa6b6;text-transform:uppercase;line-height:1.4}
+/* ---------- corpo ---------- */
+.sheet{padding:9mm 15mm 0 19mm;position:relative}
+.page--dark .sheet{position:absolute;left:0;right:0;top:106mm;bottom:0;background:#f4f1e9;color:#1b201c;padding:9mm 15mm 0 19mm;overflow:hidden}
+.sectionhead{display:flex;align-items:baseline;gap:3mm;margin:0 0 2.5mm}
+.sectionhead span{font-family:'JetBrains Mono',monospace;font-size:5.4pt;letter-spacing:.12em;color:#2a64f2}
+.sectionhead h2{margin:0;font-size:10.5pt;letter-spacing:-.02em;font-weight:600}
+.intro{font-family:'Source Serif 4',serif;font-size:8.2pt;line-height:1.5;color:#3b403b;margin:0 0 6mm;max-width:172mm}
+table{width:100%;border-collapse:collapse;font-size:7.6pt;line-height:1.38;border:1px solid #11161d}
+thead th{background:#11161d;color:#fff;font-family:'JetBrains Mono',monospace;font-size:5.8pt;letter-spacing:.08em;text-transform:uppercase;text-align:left;padding:2.4mm 2mm;font-weight:400}
+thead th:last-child{text-align:right}
+tbody td{border-bottom:1px solid #c9c3b6;padding:2.6mm 2mm;vertical-align:top;color:#1f241f}
+tbody tr:nth-child(even) td{background:#f0ede4}
+tbody td:first-child{border-left:2px solid #2a64f2}
+td.vol{font-weight:600;color:#11161d;font-size:8.1pt;line-height:1.25}
+td.vol small{display:block;font-weight:400;color:#5c5f58;font-size:6.3pt;margin-top:1mm;letter-spacing:.02em;line-height:1.25}
+td.pages{text-align:right;font-family:'JetBrains Mono',monospace;font-size:8pt;white-space:nowrap;color:#1c4fd6}
+.pill{display:inline-block;margin-top:1mm;border:1px solid #2a64f2;color:#1c4fd6;font-family:'JetBrains Mono',monospace;font-size:4.6pt;letter-spacing:.08em;text-transform:uppercase;padding:.5mm 1.2mm}
+/* ---------- página 2 ---------- */
+.page--light{background:#f4f1e9}
+.pagehead{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #d8d3c6;padding:10mm 15mm 3mm 19mm}
+.pagehead .brandline b{color:#11161d}
+.pagehead .brandline small{color:#6a6d66}
+.pagehead .mono{color:#6a6d66}
+.content{padding:7mm 15mm 0 19mm}
+.trails{display:flex;gap:3mm;margin:0 0 7mm}
+.trail{flex:1;background:#fff;border:1px solid #d8d3c6;padding:3.5mm}
+.trail .mono{color:#2a64f2;font-size:5.2pt}
+.trail h3{margin:1.5mm 0 1.2mm;font-size:9pt;letter-spacing:-.02em;font-weight:600}
+.trail p{margin:0;font-family:'Source Serif 4',serif;font-size:7.4pt;line-height:1.45;color:#444942}
+.diffs{display:grid;grid-template-columns:1fr 1fr;gap:1.5mm 8mm;margin:0 0 7mm;padding:0;list-style:none}
+.diffs li{position:relative;padding-left:4mm;font-size:7.4pt;line-height:1.45;color:#343a34}
+.diffs li::before{content:"★";position:absolute;left:0;top:.1mm;font-size:5.5pt;color:#2a64f2}
+.delivery{display:grid;grid-template-columns:1.2fr .8fr;gap:4mm;background:#0b0e12;color:#f3f5f7;padding:5mm}
+.delivery h3{margin:0 0 2mm;font-size:8pt;letter-spacing:-.01em}
+.delivery p{margin:0;font-size:7pt;line-height:1.45;color:#c3cad4}
+.delivery .mono{color:#6f9bff;font-size:5pt;margin-bottom:1.5mm;display:block}
+.delivery .box{border-left:1px solid rgba(255,255,255,.18);padding-left:4mm}
+.delivery strong{color:#fff;font-weight:600}
+.howto{margin:8mm 0 0;border-top:1px solid #d8d3c6;padding-top:4mm}
+.howto__head{margin-bottom:3mm}
+.howto__head .mono{color:#2a64f2;font-size:5pt}
+.howto__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}
+.howto__grid b{display:block;font-size:8pt;letter-spacing:-.01em;margin:1.2mm 0 1mm}
+.howto__grid p{margin:0;font-family:'Source Serif 4',serif;font-size:7pt;line-height:1.45;color:#444942}
+.howto__n{display:block;color:#6a6d66;font-size:4.8pt}
+.closing{margin-top:7mm;border-top:1px solid #d8d3c6;padding-top:4mm;display:grid;grid-template-columns:1fr auto;gap:2mm 8mm;align-items:end}
+.closing__quote{grid-column:1/-1;margin:0;font-family:'Source Serif 4',serif;font-size:13pt;line-height:1.35;color:#1b201c;max-width:150mm}
+.closing__cite{grid-column:1;color:#6a6d66;font-size:5pt;margin:0}
+.closing__next{grid-column:1/-1;margin:2mm 0 0;font-size:7pt;line-height:1.45;color:#444942;max-width:170mm}
+.closing__next strong{color:#11161d}
+.foot{position:absolute;left:19mm;right:15mm;bottom:8mm;display:flex;justify-content:space-between;border-top:1px solid #d8d3c6;padding-top:2.5mm;font-family:'JetBrains Mono',monospace;font-size:5pt;letter-spacing:.06em;text-transform:uppercase;color:#77796f}
+.page--dark .foot{border-top-color:#d8d3c6;color:#77796f;left:19mm;right:15mm;bottom:7mm}
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1 -->
+<section class="page page--dark">
+  <div class="bar"></div>
+  <header class="cover">
+    <div class="brandline">
+      <div class="mark">IA</div>
+      <div><b>IA de Verdade</b><small>Coleção técnica</small></div>
+      <div class="edition mono">Guia · nov/2026</div>
+    </div>
+    <p class="kicker mono">Guia da coleção e grade de conteúdo</p>
+    <h1>Do primeiro prompt<br>ao seu próprio servidor<em>.</em></h1>
+    <p class="sub">Cinco volumes, dois bônus de consulta e um projeto que atravessa a obra inteira: o Assistente Casa.</p>
+    <div class="stats">
+      <div class="stat"><b>5</b><span>volumes de percurso</span></div>
+      <div class="stat"><b>2</b><span>bônus de consulta</span></div>
+      <div class="stat"><b>89</b><span>capítulos com projeto ★</span></div>
+      <div class="stat"><b>1.689</b><span>páginas em português</span></div>
+    </div>
+  </header>
+
+  <div class="sheet">
+    <div class="sectionhead"><span>01</span><h2>O que é esta coleção</h2></div>
+    <p class="intro">Escrita em português do Brasil, a coleção leva do primeiro prompt ao servidor na sua casa. Cada capítulo abre com nível, pré-requisitos e tempo estimado, explica o conceito antes do uso e fecha com um projeto prático marcado com ★, além de erros comuns, limitações, resumo e referências. Um único projeto atravessa a obra: o Assistente Casa, que nasce como conjunto de instruções no Volume 1 e termina hospedado na sua casa no Volume 5.</p>
+
+    <div class="sectionhead"><span>02</span><h2>A grade, volume por volume</h2></div>
+    <table>
+      <thead><tr><th style="width:36mm">Volume</th><th style="width:76mm">O que aprende</th><th style="width:54mm">O que constrói</th><th style="width:14mm">Págs.</th></tr></thead>
+      <tbody>
+        <tr><td class="vol">1 · Entendendo e usando IA<small>Para quem: qualquer pessoa</small></td><td>Como a IA funciona; prompts e contexto; custos e escolha de ferramenta; IA no dia a dia (finanças, redes, 3D, documentos); segurança e LGPD</td><td>Assistente pessoal, orçamento auditado, um mês de conteúdo, resumo diário de e-mails, primeiro bot</td><td class="pages">300</td></tr>
+        <tr><td class="vol">2 · Construindo software com IA<small>Para quem: programador</small></td><td>Programação assistida; repositórios para agentes; APIs; function calling; RAG; MCP; evals; observabilidade; segurança</td><td>Slugify com spec e PR, extrator de recibos, busca semântica, servidor MCP, Central de Atendimento</td><td class="pages">307</td></tr>
+        <tr><td class="vol">3 · Agentes, automações e IA aplicada<small>Para quem: intermediário a avançado</small></td><td>Anatomia de agentes; agente sem framework; frameworks; multiagentes; memória; agentes locais; n8n; integrações; processos</td><td>Mini-agente de pesquisa, equipe pesquisador-redator-revisor, 12 bots, agente financeiro, pipeline descreva→imprima</td><td class="pages">247</td></tr>
+        <tr><td class="vol">4 · OpenClaw e DSH<small>Para quem: agente próprio</small></td><td>Manual dos dois harnesses: instalação, canais, skills, automações, acesso remoto, segurança, backup, uso conjunto</td><td>4 projetos integrados (código pelo Telegram, relatório semanal, social media com aprovação, oficina 3D remota)</td><td class="pages">310</td></tr>
+        <tr><td class="vol">5 · Controle remoto e Home Lab<small>Para quem: quem quer rodar em casa</small></td><td>Redes para humanos; Tailscale; controle remoto; servidores com PCs e celulares antigos; CasaOS; apps; IA local; backup</td><td>Painel de casa no celular, celular velho como servidor, 6 stacks, Assistente Casa completo</td><td class="pages">247</td></tr>
+        <tr><td class="vol">Bônus · Referência<small>Para quem: consulta</small></td><td>~150 skills comentadas, 13 combos, licenças e riscos, instalação por agente</td><td>Seleção comentada e combos para consultar depois</td><td class="pages">112</td></tr>
+        <tr><td class="vol">Bônus · Catálogo<small>Para quem: consulta</small></td><td>1.323 skills de 273 repositórios (coleta 29/10/2026) + planilha</td><td>PDF de consulta + planilha XLSX</td><td class="pages">166</td></tr>
+</tbody>
+    </table>
+  </div>
+  <footer class="foot"><span>Coleção IA de Verdade · Giliarde Reis Pereira</span><span>1 / 2</span></footer>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="page page--light">
+  <header class="pagehead">
+    <div class="brandline">
+      <div class="mark">IA</div>
+      <div><b>IA de Verdade</b><small>Guia da coleção</small></div>
+    </div>
+    <span class="mono">Guia · nov/2026 · 2 / 2</span>
+  </header>
+
+  <div class="content">
+    <div class="sectionhead"><span>03</span><h2>Trilhas de leitura</h2></div>
+    <div class="trails">
+      <div class="trail"><span class="mono">Iniciante / entusiasta</span><h3>Usar IA todos os dias</h3><p>Volume 1 completo → Volume 3 (caps. 35, 41, 46 a 49) → Volume 5. Objetivo: usar IA no cotidiano e rodar um assistente próprio em casa.</p></div>
+      <div class="trail"><span class="mono">Desenvolvedor</span><h3>Programar com agentes</h3><p>Volume 1 (caps. 2, 4, 6 e 7) → Volume 2 inteiro → Volume 3 (caps. 35 a 40, 42 e 43) → Volume 4. Objetivo: colocar IA dentro do software.</p></div>
+      <div class="trail"><span class="mono">Agente próprio</span><h3>Operar OpenClaw e DSH</h3><p>Volume 1 (caps. 4 e 9) → Volume 4 inteiro → Volume 5 (redes, Tailscale, CasaOS). Objetivo: agente no ar, com acesso remoto e backup.</p></div>
+    </div>
+
+    <div class="sectionhead"><span>04</span><h2>O que diferencia o material</h2></div>
+    <ul class="diffs">
+      <li>89 capítulos, cada um com projeto prático — não é coletânea de teoria.</li>
+      <li>Um projeto único (Assistente Casa) crescendo do Volume 1 ao 5.</li>
+      <li>Português do Brasil, com LGPD e exemplos do cotidiano: MEI, boleto, WhatsApp, hotelaria.</li>
+      <li>Cada capítulo diz o que a IA não faz, para evitar armadilhas e expectativa errada.</li>
+      <li>Dados conferidos em 1º/11/2026, com data e link da fonte oficial em cada capítulo.</li>
+      <li>Três trilhas explícitas: iniciante, programador e avançado.</li>
+      <li>Bônus de consulta: ~150 skills comentadas e 1.323 skills catalogadas, com planilha.</li>
+    </ul>
+
+    <div class="sectionhead"><span>05</span><h2>Formato da entrega</h2></div>
+    <div class="delivery">
+      <div>
+        <span class="mono">Você recebe</span>
+        <h3>PDF por volume + planilha</h3>
+        <p>PDFs digitais com sumário navegável. Os bônus de Referência e Catálogo incluem a planilha de skills em XLSX. A amostra gratuita traz os capítulos 1 e 2 do Volume 1.</p>
+      </div>
+      <div class="box">
+        <span class="mono">Edição</span>
+        <p><strong>Novembro de 2026.</strong> Ferramentas citadas mudam rápido: confira sempre o link da fonte antes de executar um comando.</p>
+      </div>
+    </div>
+
+    <div class="howto">
+      <div class="howto__head"><span class="mono">Como usar este guia</span></div>
+      <div class="howto__grid">
+        <div><span class="howto__n mono">01</span><b>Leia a grade</b><p>Identifique o volume que resolve o seu momento e veja o que cada um constrói.</p></div>
+        <div><span class="howto__n mono">02</span><b>Escolha a trilha</b><p>Iniciante, desenvolvedor ou agente próprio. A ordem sugere o caminho, não uma regra.</p></div>
+        <div><span class="howto__n mono">03</span><b>Comece pelo Volume 1</b><p>Ou vá direto para a coleção completa, se quiser a sequência inteira de uma vez.</p></div>
+      </div>
+    </div>
+
+    <div class="closing">
+      <p class="closing__quote">“Todo o conteúdo desta coleção nasceu dessa prática, não de teoria.”</p>
+      <p class="closing__cite mono">Giliarde Reis Pereira · Volume 1</p>
+      <p class="closing__next"><strong>Próximo passo:</strong> escolha a sua trilha, comece pelo Volume 1 e use o catálogo como consulta. A coleção completa reúne os cinco volumes e os dois bônus de consulta.</p>
+    </div>
+  </div>
+  <footer class="foot"><span>Coleção IA de Verdade · Giliarde Reis Pereira</span><span>2 / 2</span></footer>
+</section>
+
+</body>
+</html>

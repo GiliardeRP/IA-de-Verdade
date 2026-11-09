@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-11-07T17:36:01.675Z",
+  "base": "http://127.0.0.1:8093",
+  "desktopInitial": {
+    "index": 0,
+    "dots": 5,
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "cards": 7,
+    "prices": [
+      "R$ 39,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 49,90",
+      "R$ 49,90",
+      "R$ 69,90"
+    ]
+  },
+  "desktopAuto": {
+    "index": 1,
+    "dots": 5,
+    "transform": "matrix(1, 0, 0, 1, -385, 0)",
+    "cards": 7,
+    "prices": [
+      "R$ 39,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 49,90",
+      "R$ 49,90",
+      "R$ 69,90"
+    ]
+  },
+  "desktopNext": {
+    "index": 2,
+    "dots": 5,
+    "transform": "matrix(1, 0, 0, 1, -771, 0)",
+    "cards": 7,
+    "prices": [
+      "R$ 39,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 49,90",
+      "R$ 49,90",
+      "R$ 69,90"
+    ]
+  },
+  "desktopHoverPause": {
+    "before": 2,
+    "after": 2
+  },
+  "mobileSection": {
+    "barVisible": false,
+    "overflow": 0,
+    "title": "Adquira também individualmente.",
+    "cards": 7,
+    "dots": 7
+  },
+  "mobileSwipe": {
+    "before": 0,
+    "after": 1
+  },
+  "emptyIndividualCheckout": {
+    "toast": "Checkout em configuraçãoO link individual de Volume 1 — Entendendo e usando IA ainda não foi configurado. Nenhum produto foi direcionado para outro checkout.",
+    "scrollBefore": 11274,
+    "scrollAfter": 11274,
+    "offerTop": -1301
+  },
+  "axe": [],
+  "reducedMotion": {
+    "index": 0,
+    "dots": 7,
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "cards": 7,
+    "prices": [
+      "R$ 39,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 49,90",
+      "R$ 49,90",
+      "R$ 69,90"
+    ]
+  },
+  "page": {
+    "emailHref": "mailto:iadeverdade.oficial@gmail.com",
+    "emailText": "iadeverdade.oficial@gmail.com",
+    "footerCols": 3,
+    "copyright": "© 2026 IA de Verdade. Todos os direitos reservados.",
+    "about": "Giliarde é formado em Análise e Desenvolvimento de Sistemas pelo Instituto Federal Baiano e atua na ",
+    "removedWarning": true,
+    "removedGuaranteeBlock": true,
+    "noCpf": true,
+    "productPrices": [
+      "R$ 39,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 59,90",
+      "R$ 49,90",
+      "R$ 49,90",
+      "R$ 69,90"
+    ],
+    "buyLinks": [
+      "collection",
+      "vol1",
+      "vol2",
+      "vol4",
+      "collection",
+      "vol1",
+      "vol2",
+      "vol3",
+      "vol4",
+      "vol5",
+      "vol6",
+      "catalog",
+      "collection",
+      "collection"
+    ],
+    "carouselClass": "carousel is-carousel"
+  },
+  "noJs": {
+    "cards": 7,
+    "controlsVisible": false,
+    "viewportOverflow": "auto"
+  },
+  "errors": []
+}

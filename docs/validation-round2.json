@@ -1,0 +1,252 @@
+{
+  "generatedAt": "2026-11-07T20:09:51.813Z",
+  "widths": {
+    "320": {
+      "height": 15559,
+      "words": 1766,
+      "images": 28,
+      "buy": 14,
+      "overflow": 0,
+      "small": 18,
+      "finalDeltas": [
+        {
+          "cls": "eyebrow",
+          "delta": -0.01
+        },
+        {
+          "cls": "h2",
+          "delta": 0
+        },
+        {
+          "cls": "lead",
+          "delta": 0
+        },
+        {
+          "cls": "final__cta",
+          "delta": 0
+        },
+        {
+          "cls": "final__guarantee",
+          "delta": 0
+        },
+        {
+          "cls": "final__micro",
+          "delta": 0
+        }
+      ],
+      "finalCtaGroupDelta": 0,
+      "hintDelta": 0,
+      "ring": {
+        "class": "hero__visual hero-ring is-static",
+        "items": 7
+      }
+    },
+    "390": {
+      "height": 14469,
+      "words": 1770,
+      "images": 28,
+      "buy": 14,
+      "overflow": 0,
+      "small": 20,
+      "finalDeltas": [
+        {
+          "cls": "eyebrow",
+          "delta": -0.01
+        },
+        {
+          "cls": "h2",
+          "delta": 0
+        },
+        {
+          "cls": "lead",
+          "delta": 0
+        },
+        {
+          "cls": "final__cta",
+          "delta": 0
+        },
+        {
+          "cls": "final__guarantee",
+          "delta": 0
+        },
+        {
+          "cls": "final__micro",
+          "delta": 0
+        }
+      ],
+      "finalCtaGroupDelta": 0,
+      "hintDelta": 0,
+      "ring": {
+        "class": "hero__visual hero-ring is-static",
+        "items": 7
+      }
+    },
+    "768": {
+      "height": 12559,
+      "words": 1822,
+      "images": 28,
+      "buy": 14,
+      "overflow": 0,
+      "small": 20,
+      "finalDeltas": [
+        {
+          "cls": "eyebrow",
+          "delta": 0
+        },
+        {
+          "cls": "h2",
+          "delta": -0.01
+        },
+        {
+          "cls": "lead",
+          "delta": 0
+        },
+        {
+          "cls": "final__cta",
+          "delta": 0
+        },
+        {
+          "cls": "final__guarantee",
+          "delta": 0
+        },
+        {
+          "cls": "final__micro",
+          "delta": 0
+        }
+      ],
+      "finalCtaGroupDelta": 0,
+      "hintDelta": 0,
+      "ring": {
+        "class": "hero__visual hero-ring is-static",
+        "items": 7
+      }
+    },
+    "1024": {
+      "height": 12947,
+      "words": 1822,
+      "images": 28,
+      "buy": 14,
+      "overflow": 0,
+      "small": 20,
+      "finalDeltas": [
+        {
+          "cls": "eyebrow",
+          "delta": -0.01
+        },
+        {
+          "cls": "h2",
+          "delta": -0.01
+        },
+        {
+          "cls": "lead",
+          "delta": -0.01
+        },
+        {
+          "cls": "final__cta",
+          "delta": 0
+        },
+        {
+          "cls": "final__guarantee",
+          "delta": 0
+        },
+        {
+          "cls": "final__micro",
+          "delta": 0
+        }
+      ],
+      "finalCtaGroupDelta": 0,
+      "hintDelta": 0,
+      "ring": {
+        "class": "hero__visual hero-ring is-static",
+        "items": 7
+      }
+    },
+    "1440": {
+      "height": 13178,
+      "words": 1832,
+      "images": 28,
+      "buy": 14,
+      "overflow": 0,
+      "small": 20,
+      "finalDeltas": [
+        {
+          "cls": "eyebrow",
+          "delta": -0.01
+        },
+        {
+          "cls": "h2",
+          "delta": -0.01
+        },
+        {
+          "cls": "lead",
+          "delta": 0
+        },
+        {
+          "cls": "final__cta",
+          "delta": 0
+        },
+        {
+          "cls": "final__guarantee",
+          "delta": 0
+        },
+        {
+          "cls": "final__micro",
+          "delta": 0
+        }
+      ],
+      "finalCtaGroupDelta": 0,
+      "hintDelta": 0,
+      "ring": {
+        "class": "hero__visual hero-ring is-static",
+        "items": 7
+      }
+    }
+  },
+  "ring": {
+    "animated": true,
+    "hoverScale": 1.19,
+    "pausedOutOfView": true,
+    "reduced": {
+      "cls": "hero__visual hero-ring is-static",
+      "visible": 7,
+      "transform": "none"
+    },
+    "noJs": {
+      "visible": 3,
+      "stage": "flex"
+    }
+  },
+  "alignment": {
+    "320": {
+      "maxFinalDelta": 0.01,
+      "hintDelta": 0,
+      "pass": true
+    },
+    "390": {
+      "maxFinalDelta": 0.01,
+      "hintDelta": 0,
+      "pass": true
+    },
+    "768": {
+      "maxFinalDelta": 0.01,
+      "hintDelta": 0,
+      "pass": true
+    },
+    "1024": {
+      "maxFinalDelta": 0.01,
+      "hintDelta": 0,
+      "pass": true
+    },
+    "1440": {
+      "maxFinalDelta": 0.01,
+      "hintDelta": 0,
+      "pass": true
+    }
+  },
+  "testimonials": {
+    "rendered": 3,
+    "controls": 3,
+    "hasReviewSchema": false
+  },
+  "errors": []
+}

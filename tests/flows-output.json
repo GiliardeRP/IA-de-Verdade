@@ -1,0 +1,21 @@
+{
+  "mobileBar": {
+    "atFinal": false,
+    "atFooter": false,
+    "footerVisible": true
+  },
+  "consent": {
+    "bannerShown": true,
+    "bannerHidden": true,
+    "consentStored": {
+      "marketing": true,
+      "ts": 1793967712965
+    },
+    "fbqExists": "function",
+    "checkoutUrl": "https://example.com/checkout?x=1&utm_source=teste&utm_campaign=fluxo"
+  },
+  "noPixel": {
+    "banner": false,
+    "toast": "Medição desativadaEsta versão não carrega Meta Pixel. Apenas o armazenamento essencial é usado."
+  }
+}

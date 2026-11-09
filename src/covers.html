@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Capas — Coleção IA de Verdade</title>
+<style>
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;src:url('../assets/fonts/space-grotesk-400-latin.woff2') format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;src:url('../assets/fonts/space-grotesk-600-latin.woff2') format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;src:url('../assets/fonts/space-grotesk-700-latin.woff2') format('woff2')}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400;src:url('../assets/fonts/source-serif-4-400-latin.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;src:url('../assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2')}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#2b2b2b;font-family:'Space Grotesk',sans-serif}
+.cover{
+  justify-content:space-between;
+  width:1200px;height:1725px;position:relative;overflow:hidden;
+  background:#0b0e12;color:#f3f5f7;
+  padding:76px 82px 58px;margin:0 auto 36px;
+  display:flex;flex-direction:column;
+}
+.cover:before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:100% 92px,92px 100%;
+  mask-image:linear-gradient(to bottom,#000,#000 70%,transparent);
+  -webkit-mask-image:linear-gradient(to bottom,#000,#000 70%,transparent);
+}
+.cover:after{content:"";position:absolute;right:-190px;top:-190px;width:760px;height:760px;border-radius:50%;
+  background:radial-gradient(circle,rgba(var(--rgb),.22),rgba(var(--rgb),0) 66%);pointer-events:none;
+}
+.wm{position:absolute;right:-55px;bottom:82px;font-size:590px;font-weight:700;line-height:.64;letter-spacing:-.12em;color:transparent;-webkit-text-stroke:1.5px rgba(var(--rgb),.14);z-index:1;pointer-events:none;user-select:none}
+.edge{position:absolute;left:0;top:0;bottom:0;width:13px;background:var(--accent);z-index:2}
+.top,.kicker-row,.hero,.terminal,.topics,.series,.footer{position:relative;z-index:3}
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:30px}
+.brand{display:flex;align-items:center;gap:16px}
+.mark{width:52px;height:52px;background:#0b0e12;border:1px solid var(--accent);color:#fff;display:grid;place-items:center;font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:700;letter-spacing:-.05em;flex:none}
+.brand b{display:block;font-size:26px;font-weight:600;letter-spacing:-.03em;line-height:1}
+.brand small{display:block;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.19em;color:#9aa6b6;text-transform:uppercase;margin-top:6px;font-weight:400}
+.edition{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#8d97a5;text-align:right;line-height:1.7;padding-top:4px}
+.edition b{display:block;color:#f3f5f7;font-weight:400;letter-spacing:.14em}
+.kicker-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-top:88px}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.pages{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8d97a5}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:30px;align-items:start;margin-top:18px}
+h1{margin:0;font-size:80px;line-height:.96;letter-spacing:-.045em;font-weight:600;max-width:860px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+.number{text-align:right;padding-top:4px}
+.number b{display:block;font-size:var(--num-size,150px);line-height:.76;letter-spacing:-.08em;color:var(--accent);font-weight:600}
+.number span{display:block;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#8d97a5;margin-top:12px}
+.sub{margin:24px 0 0;font-size:25px;line-height:1.45;color:#b9c2cd;max-width:800px;font-weight:400;letter-spacing:-.01em}
+.terminal{margin-top:52px;background:#0f141b;border:1px solid rgba(255,255,255,.14);border-radius:4px;box-shadow:0 24px 50px -22px rgba(0,0,0,.9);overflow:hidden}
+.term-top{height:46px;border-bottom:1px solid rgba(255,255,255,.1);display:flex;align-items:center;gap:7px;padding:0 20px}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.2)}
+.dot:first-child{background:var(--accent)}
+.term-name{margin-left:12px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;color:#7f8a98}
+.code{padding:24px 28px 27px;font-family:'JetBrains Mono',monospace;font-size:20px;line-height:1.62;color:#c9d1d9;white-space:pre-wrap}
+.code .p{color:var(--accent)}
+.code .g{color:#3fb950}
+.code .m{color:#8d97a5}
+.topics{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:#c3cad3}
+.pill:before{content:"";width:5px;height:5px;background:var(--accent);border-radius:50%}
+.series{display:flex;gap:7px;margin-top:24px;padding-top:30px;border-top:1px solid rgba(255,255,255,.12)}
+.step{height:7px;flex:1;background:rgba(255,255,255,.1)}
+.step.on{background:var(--accent)}
+.inside{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:44px;align-items:start;margin-top:32px;border-top:1px solid rgba(255,255,255,.12);padding-top:24px}
+.inside__head{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.inside ul{display:grid;gap:11px;margin:15px 0 0;padding:0;list-style:none}
+.inside li{position:relative;padding-left:22px;font-size:21px;line-height:1.25;font-weight:500;color:#eef2f6;letter-spacing:-.01em}
+.inside li:before{content:"★";position:absolute;left:0;top:2px;font-size:10px;color:var(--accent)}
+.inside__stat{text-align:right;border-left:1px solid rgba(255,255,255,.12);padding-left:28px}
+.inside__stat b{display:block;font-size:104px;line-height:.8;letter-spacing:-.07em;color:var(--accent);font-weight:600}
+.inside__stat span{display:block;margin-top:11px;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#8d97a5;line-height:1.5}
+.pull{margin-top:30px;padding-left:24px;border-left:3px solid var(--accent);font-family:'Source Serif 4',serif;font-size:27px;line-height:1.35;color:#d6dde6;max-width:850px}
+.pull em{font-style:normal;color:var(--accent)}
+.main{display:flex;flex-direction:column}
+.bottom{display:flex;flex-direction:column}
+.footer{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-top:17px;padding-top:0}
+.author b{display:block;font-size:17px;font-weight:600;letter-spacing:-.01em}
+.author span{display:block;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:#8d97a5;margin-top:5px}
+.footer .mono{font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:#7f8a98;text-align:right;line-height:1.7}
+</style>
+</head>
+<body>
+
+<!-- 01 -->
+<article class="cover" style="--accent:#2f6bff;--rgb:47,107,255">
+  <div class="edge"></div>
+  <div class="wm" aria-hidden="true">IA</div>
+  <div class="top">
+    <div class="brand"><div class="mark">IA</div><div><b>IA de Verdade</b><small>Coleção técnica</small></div></div>
+    <div class="edition"><b>EDIÇÃO NOV/2026</b>6 volumes + catálogo</div>
+  </div>
+  <div class="main">
+  <div class="kicker-row"><span class="kicker">Volume 01</span><span class="pages">300 páginas</span></div>
+  <div class="hero">
+    <h1>Entendendo<br>e usando <em>IA</em></h1>
+    <div class="number"><b style="--num-size:150px">01</b><span>Fundamentos</span></div>
+  </div>
+  <p class="sub">Do primeiro prompt ao uso consciente no dia a dia.</p>
+  <div class="terminal">
+    <div class="term-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="term-name">terminal · ia</span></div>
+    <div class="code"><span class="p">$</span> ia --explicar "token"
+<span class="g">&gt;</span> pedaço de texto que o modelo enxerga
+<span class="p">$</span> ia --usar --no-dia-a-dia
+<span class="g">&gt;</span> ok</div>
+  </div>
+  <div class="topics"><span class="pill">Fundamentos</span><span class="pill">Prompt e contexto</span><span class="pill">Custos e LGPD</span></div>
+  <div class="inside">
+    <div><div class="inside__head">O que você constrói</div><ul><li>Diário de bordo de IA</li><li>Orçamento pessoal auditado</li><li>Primeiro bot</li></ul></div>
+    <div class="inside__stat"><b>17</b><span>capítulos</span></div>
+  </div>
+  <div class="pull">“IA não é mágica. É contexto, custo e prática.”</div>
+  </div>
+  <div class="bottom">
+  <div class="series"><i class="step on"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i></div>
+  <div class="footer"><div class="author"><b>Giliarde Reis Pereira</b><span>Coleção IA de Verdade</span></div><div class="mono">PDF · 1ª edição<br>nov/2026</div></div>
+  </div>
+</article>
+
+<!-- 02 -->
+<article class="cover" style="--accent:#8b5cf6;--rgb:139,92,246">
+  <div class="edge"></div>
+  <div class="wm" aria-hidden="true">IA</div>
+  <div class="top">
+    <div class="brand"><div class="mark">IA</div><div><b>IA de Verdade</b><small>Coleção técnica</small></div></div>
+    <div class="edition"><b>EDIÇÃO NOV/2026</b>6 volumes + catálogo</div>
+  </div>
+  <div class="main">
+  <div class="kicker-row"><span class="kicker">Volume 02</span><span class="pages">307 páginas</span></div>
+  <div class="hero">
+    <h1>Construindo<br>software com <em>IA</em></h1>
+    <div class="number"><b>02</b><span>Programador</span></div>
+  </div>
+  <p class="sub">Programação assistida, APIs, RAG e MCP na prática.</p>
+  <div class="terminal">
+    <div class="term-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="term-name">terminal · git</span></div>
+    <div class="code"><span class="p">$</span> git switch -c feat/ia
+<span class="g">&gt;</span> agente: plano pronto, 4 testes novos
+<span class="p">$</span> pytest &amp;&amp; git push
+<span class="g">&gt;</span> ok</div>
+  </div>
+  <div class="topics"><span class="pill">Cursor</span><span class="pill">RAG e MCP</span><span class="pill">Evals</span></div>
+  <div class="inside">
+    <div><div class="inside__head">O que você constrói</div><ul><li>Slugify com spec e PR</li><li>Servidor MCP</li><li>Central de Atendimento</li></ul></div>
+    <div class="inside__stat"><b>17</b><span>capítulos</span></div>
+  </div>
+  <div class="pull">“Contexto certo, no lugar certo.”</div>
+  </div>
+  <div class="bottom">
+  <div class="series"><i class="step"></i><i class="step on"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i></div>
+  <div class="footer"><div class="author"><b>Giliarde Reis Pereira</b><span>Coleção IA de Verdade</span></div><div class="mono">PDF · 1ª edição<br>nov/2026</div></div>
+  </div>
+</article>
+
+<!-- 03 -->
+<article class="cover" style="--accent:#f59e0b;--rgb:245,158,11">
+  <div class="edge"></div>
+  <div class="wm" aria-hidden="true">IA</div>
+  <div class="top">
+    <div class="brand"><div class="mark">IA</div><div><b>IA de Verdade</b><small>Coleção técnica</small></div></div>
+    <div class="edition"><b>EDIÇÃO NOV/2026</b>6 volumes + catálogo</div>
+  </div>
+  <div class="main">
+  <div class="kicker-row"><span class="kicker">Volume 03</span><span class="pages">247 páginas</span></div>
+  <div class="hero">
+    <h1>Agentes,<br>automações e<br><em>IA aplicada</em></h1>
+    <div class="number"><b>03</b><span>Intermediário</span></div>
+  </div>
+  <p class="sub">Do agente sem framework ao multiagente em produção.</p>
+  <div class="terminal">
+    <div class="term-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="term-name">terminal · agente</span></div>
+    <div class="code"><span class="p">$</span> agente --objetivo "organizar a semana"
+<span class="g">&gt;</span> plano: 4 passos · orçamento: 20 chamadas
+<span class="m">&gt;</span> aguardando aprovação humana</div>
+  </div>
+  <div class="topics"><span class="pill">Agentes</span><span class="pill">n8n</span><span class="pill">Processos</span></div>
+  <div class="inside">
+    <div><div class="inside__head">O que você constrói</div><ul><li>Mini-agente com citações</li><li>Equipe multiagente</li><li>12 bots do cotidiano</li></ul></div>
+    <div class="inside__stat"><b>15</b><span>capítulos</span></div>
+  </div>
+  <div class="pull">“Agente é modelo em loop, com ferramentas e limites.”</div>
+  </div>
+  <div class="bottom">
+  <div class="series"><i class="step"></i><i class="step"></i><i class="step on"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i></div>
+  <div class="footer"><div class="author"><b>Giliarde Reis Pereira</b><span>Coleção IA de Verdade</span></div><div class="mono">PDF · 1ª edição<br>nov/2026</div></div>
+  </div>
+</article>
+
+<!-- 04 -->
+<article class="cover" style="--accent:#14b8a6;--rgb:20,184,166">
+  <div class="edge"></div>
+  <div class="wm" aria-hidden="true">IA</div>
+  <div class="top">
+    <div class="brand"><div class="mark">IA</div><div><b>IA de Verdade</b><small>Coleção técnica</small></div></div>
+    <div class="edition"><b>EDIÇÃO NOV/2026</b>6 volumes + catálogo</div>
+  </div>
+  <div class="main">
+  <div class="kicker-row"><span class="kicker">Volume 04</span><span class="pages">310 páginas</span></div>
+  <div class="hero">
+    <h1>Manuais<br><em>OpenClaw e DSH</em></h1>
+    <div class="number"><b>04</b><span>Avançado</span></div>
+  </div>
+  <p class="sub">Instalação, canais, skills, permissões e backup.</p>
+  <div class="terminal">
+    <div class="term-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="term-name">terminal · openclaw</span></div>
+    <div class="code"><span class="p">$</span> openclaw gateway status
+<span class="g">&gt;</span> recepção: online
+<span class="p">$</span> dsh --profile acp
+<span class="g">&gt;</span> oficina: pronta</div>
+  </div>
+  <div class="topics"><span class="pill">OpenClaw</span><span class="pill">DSH</span><span class="pill">Acesso remoto</span></div>
+  <div class="inside">
+    <div><div class="inside__head">O que você constrói</div><ul><li>Código pelo Telegram</li><li>Relatório semanal</li><li>Oficina 3D remota</li></ul></div>
+    <div class="inside__stat"><b>25</b><span>capítulos</span></div>
+  </div>
+  <div class="pull">“Recepção e oficina: dois harnesses, um sistema.”</div>
+  </div>
+  <div class="bottom">
+  <div class="series"><i class="step"></i><i class="step"></i><i class="step"></i><i class="step on"></i><i class="step"></i><i class="step"></i><i class="step"></i></div>
+  <div class="footer"><div class="author"><b>Giliarde Reis Pereira</b><span>Coleção IA de Verdade</span></div><div class="mono">PDF · 1ª edição<br>nov/2026</div></div>
+  </div>
+</article>
+
+<!-- 05 -->
+<article class="cover" style="--accent:#22c55e;--rgb:34,197,94">
+  <div class="edge"></div>
+  <div class="wm" aria-hidden="true">IA</div>
+  <div class="top">
+    <div class="brand"><div class="mark">IA</div><div><b>IA de Verdade</b><small>Coleção técnica</small></div></div>
+    <div class="edition"><b>EDIÇÃO NOV/2026</b>6 volumes + catálogo</div>
+  </div>
+  <div class="main">
+  <div class="kicker-row"><span class="kicker">Volume 05</span><span class="pages">247 páginas</span></div>
+  <div class="hero">
+    <h1>Controle remoto<br>e <em>Home Lab</em></h1>
+    <div class="number"><b>05</b><span>Avançado</span></div>
+  </div>
+  <p class="sub">Tailscale, servidores antigos e o Assistente Casa no ar.</p>
+  <div class="terminal">
+    <div class="term-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="term-name">terminal · casa</span></div>
+    <div class="code"><span class="p">$</span> tailscale status
+<span class="g">&gt;</span> casa online
+<span class="p">$</span> curl http://lab:8080
+<span class="g">&gt;</span> Assistente Casa: ok</div>
+  </div>
+  <div class="topics"><span class="pill">Tailscale</span><span class="pill">CasaOS</span><span class="pill">IA local</span></div>
+  <div class="inside">
+    <div><div class="inside__head">O que você constrói</div><ul><li>Painel da casa no celular</li><li>Celular velho como servidor</li><li>Assistente Casa completo</li></ul></div>
+    <div class="inside__stat"><b>15</b><span>capítulos</span></div>
+  </div>
+  <div class="pull">“O Assistente Casa termina hospedado na sua casa.”</div>
+  </div>
+  <div class="bottom">
+  <div class="series"><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step on"></i><i class="step"></i><i class="step"></i></div>
+  <div class="footer"><div class="author"><b>Giliarde Reis Pereira</b><span>Coleção IA de Verdade</span></div><div class="mono">PDF · 1ª edição<br>nov/2026</div></div>
+  </div>
+</article>
+
+<!-- 06 -->
+<article class="cover" style="--accent:#60a5fa;--rgb:96,165,250">
+  <div class="edge"></div>
+  <div class="wm" aria-hidden="true">IA</div>
+  <div class="top">
+    <div class="brand"><div class="mark">IA</div><div><b>IA de Verdade</b><small>Coleção técnica</small></div></div>
+    <div class="edition"><b>EDIÇÃO NOV/2026</b>6 volumes + catálogo</div>
+  </div>
+  <div class="main">
+  <div class="kicker-row"><span class="kicker">Volume 06</span><span class="pages">112 páginas</span></div>
+  <div class="hero">
+    <h1>Referência</h1>
+    <div class="number"><b>06</b><span>Consulta</span></div>
+  </div>
+  <p class="sub">Skills comentadas, combos, licenças e glossário.</p>
+  <div class="terminal">
+    <div class="term-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="term-name">terminal · catálogo</span></div>
+    <div class="code"><span class="p">$</span> catálogo --buscar "contexto"
+<span class="g">&gt;</span> 42 skills · 7 combos
+<span class="p">$</span> instalar --agente openclaw
+<span class="g">&gt;</span> link + licença conferidos</div>
+  </div>
+  <div class="topics"><span class="pill">~150 skills</span><span class="pill">13 combos</span><span class="pill">Glossário</span></div>
+  <div class="inside">
+    <div><div class="inside__head">O que você encontra</div><ul><li>~150 Skills comentadas</li><li>13 combos por objetivo</li><li>Glossário e índice</li></ul></div>
+    <div class="inside__stat"><b>6</b><span>seções R1–R6</span></div>
+  </div>
+  <div class="pull">“Consulte antes de instalar.”</div>
+  </div>
+  <div class="bottom">
+  <div class="series"><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step on"></i><i class="step"></i></div>
+  <div class="footer"><div class="author"><b>Giliarde Reis Pereira</b><span>Coleção IA de Verdade</span></div><div class="mono">PDF · 1ª edição<br>nov/2026</div></div>
+  </div>
+</article>
+
+<!-- CATÁLOGO -->
+<article class="cover" style="--accent:#22d3ee;--rgb:34,211,238">
+  <div class="edge"></div>
+  <div class="wm" aria-hidden="true">IA</div>
+  <div class="top">
+    <div class="brand"><div class="mark">IA</div><div><b>IA de Verdade</b><small>Catálogo digital</small></div></div>
+    <div class="edition"><b>EDIÇÃO NOV/2026</b>produto independente</div>
+  </div>
+  <div class="main">
+  <div class="kicker-row"><span class="kicker">Catálogo de Skills</span><span class="pages">PDF 166 p · XLSX 1.323</span></div>
+  <div class="hero">
+    <h1>Catálogo digital<br>de <em>Skills</em></h1>
+    <div class="number"><b style="--num-size:92px">1.323</b><span>skills catalogadas</span></div>
+  </div>
+  <p class="sub">1.323 skills de 273 repositórios para consultar antes de instalar.</p>
+  <div class="terminal">
+    <div class="term-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="term-name">terminal · skills</span></div>
+    <div class="code"><span class="p">$</span> skills --count
+<span class="g">&gt;</span> 1.323
+<span class="p">$</span> skills --validate static
+<span class="g">&gt;</span> ok · links HTTP 200</div>
+  </div>
+  <div class="topics"><span class="pill">PDF 166 p</span><span class="pill">XLSX 1.323</span><span class="pill">11 categorias</span></div>
+  <div class="inside">
+    <div><div class="inside__head">O que você encontra</div><ul><li>1.323 skills catalogadas</li><li>273 repositórios</li><li>Planilha XLSX</li></ul></div>
+    <div class="inside__stat"><b>11</b><span>categorias</span></div>
+  </div>
+  <div class="pull">“1.323 skills para responder: qual ferramenta eu uso?”</div>
+  </div>
+  <div class="bottom">
+  <div class="series"><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step"></i><i class="step on"></i></div>
+  <div class="footer"><div class="author"><b>Giliarde Reis Pereira</b><span>Catálogo digital de Skills</span></div><div class="mono">PDF + XLSX<br>nov/2026</div></div>
+  </div>
+</article>
+
+</body>
+</html>

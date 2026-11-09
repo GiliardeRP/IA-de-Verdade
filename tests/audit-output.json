@@ -1,0 +1,107 @@
+{
+  "interactions": {
+    "faqOpen": true,
+    "dialogOpen": true,
+    "dialogClosed": true,
+    "toastVisible": true,
+    "toastText": "Checkout em configuraçãoO link de compra ainda não foi publicado. Enquanto isso, você pode ler a amostra grátis dos capítulos 1 e 2."
+  },
+  "desktop": {
+    "metrics": {
+      "scrollW": 1440,
+      "innerW": 1440,
+      "scrollH": 17889,
+      "volumes": 6,
+      "gallery": 10,
+      "faqs": 17,
+      "imgs": [
+        {
+          "src": null,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "prices": [
+        "R$ 197",
+        "R$ 197",
+        "R$ 69,90",
+        "R$ 69,90",
+        "R$ 197",
+        "R$ 247"
+      ],
+      "h1": "Do prompt ao servidor, sem pular etapas.",
+      "title": "IA de Verdade — IA aplicada em português, na prática",
+      "stickyInert": true,
+      "schema": true
+    },
+    "errors": [],
+    "warnings": [
+      "[IADV] Checkout não configurado para a oferta \"collection\". Preencha src/config.js."
+    ],
+    "failed": []
+  },
+  "tablet": {
+    "metrics": {
+      "scrollW": 834,
+      "innerW": 834,
+      "scrollH": 20759,
+      "volumes": 6,
+      "gallery": 10,
+      "faqs": 17,
+      "imgs": [
+        {
+          "src": null,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "prices": [
+        "R$ 197",
+        "R$ 197",
+        "R$ 69,90",
+        "R$ 69,90",
+        "R$ 197",
+        "R$ 247"
+      ],
+      "h1": "Do prompt ao servidor, sem pular etapas.",
+      "title": "IA de Verdade — IA aplicada em português, na prática",
+      "stickyInert": true,
+      "schema": true
+    },
+    "errors": [],
+    "warnings": [],
+    "failed": []
+  },
+  "mobile": {
+    "metrics": {
+      "scrollW": 390,
+      "innerW": 390,
+      "scrollH": 26187,
+      "volumes": 6,
+      "gallery": 10,
+      "faqs": 17,
+      "imgs": [
+        {
+          "src": null,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "prices": [
+        "R$ 197",
+        "R$ 197",
+        "R$ 69,90",
+        "R$ 69,90",
+        "R$ 197",
+        "R$ 247"
+      ],
+      "h1": "Do prompt ao servidor, sem pular etapas.",
+      "title": "IA de Verdade — IA aplicada em português, na prática",
+      "stickyInert": true,
+      "schema": true
+    },
+    "errors": [],
+    "warnings": [],
+    "failed": []
+  }
+}
