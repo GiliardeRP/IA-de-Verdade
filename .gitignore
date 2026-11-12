@@ -1,0 +1,8 @@
+node_modules/
+dist/
+deliverables/
+tests/screenshots/
+tests/videos/
+docs/lighthouse/
+*.zip
+.DS_Store

@@ -19,7 +19,7 @@ module.exports = {
     // Domínio próprio (depois): 'https://iadeverdade.com.br/'
     // Também aceita a variável de ambiente IADV_SITE_URL no build.
     // Enquanto estiver vazia, canonical e Open Graph absoluto ficam pendentes.
-    url: '',
+    url: 'https://giliarderp.github.io/IA-de-Verdade-/',
     ogImage: 'assets/og-image.jpg',
     locale: 'pt_BR',
   },
@@ -87,15 +87,15 @@ module.exports = {
   // O order bump e o upsell são configurados NA PLATAFORMA de checkout;
   // veja docs/INTEGRACAO.md e docs/PLATAFORMAS-CHECKOUT.md.
   checkout: {
-    collection: '',
-    vol1: '',
+    collection: 'https://pay.hotmart.com/Y108454666M',
+    vol1: 'https://pay.hotmart.com/K108455234J',
     vol1Bump: '', // checkout do Volume 1 com o order bump habilitado (se existir)
-    vol2: '',
-    vol3: '',
-    vol4: '',
-    vol5: '',
-    vol6: '',
-    catalog: '',
+    vol2: 'https://pay.hotmart.com/S108455306U',
+    vol3: 'https://pay.hotmart.com/G108455378B',
+    vol4: 'https://pay.hotmart.com/X108455419L',
+    vol5: 'https://pay.hotmart.com/A108455456E',
+    vol6: 'https://pay.hotmart.com/W108455501U',
+    catalog: 'https://pay.hotmart.com/N108455530M',
   },
 
   sample: {

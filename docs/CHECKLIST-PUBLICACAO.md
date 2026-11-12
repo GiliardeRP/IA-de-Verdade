@@ -3,12 +3,12 @@
 ## Antes do build de produção
 
 - [ ] `site.url` definido (ou `IADV_SITE_URL`/`CF_PAGES_URL`).
-- [ ] `checkout.collection`.
-- [ ] `checkout.vol1`, `vol2`, `vol3`, `vol4`, `vol5`, `vol6`.
-- [ ] `checkout.catalog`.
+- [x] `checkout.collection`.
+- [x] `checkout.vol1`, `vol2`, `vol3`, `vol4`, `vol5`, `vol6`.
+- [x] `checkout.catalog`.
 - [ ] `legal.name` e `legal.email`.
 - [ ] `legal.privacyUrl`, `legal.termsUrl`, `legal.refundUrl`.
-- [ ] Preços conferidos: coleção R$ 197/R$ 247; V1 R$ 39,90; V2–V4 R$ 59,90; V5/V6 R$ 49,90; catálogo individual R$ 69,90.
+- [x] Preços conferidos no checkout em 11/11/2026: coleção R$ 197/R$ 247; V1 R$ 39,90; V2–V4 R$ 59,90; V5/V6 R$ 49,90; catálogo individual R$ 69,90.
 - [ ] Identificação pública: Giliarde Reis Pereira · Pessoa Física · Hotmart.
 - [ ] CPF/CNPJ não é exibido; validar com apoio jurídico a obrigação de identificação fiscal.
 - [ ] Termos, privacidade e reembolso prontos; a coluna “Informações” do rodapé só aparece com as três URLs.
@@ -19,7 +19,7 @@
 IADV_MODE=production IADV_SITE_URL="https://seu-dominio/" npm run build
 ```
 
-Produção falha se faltar URL, qualquer um dos 8 checkouts ou as três políticas. Não publica “a confirmar”, “em preparação” nem cria links legais fictícios.
+Produção falha hoje apenas por falta das três políticas. Não publica “a confirmar”, “em preparação” nem cria links legais fictícios.
 
 ## Depois do build
 

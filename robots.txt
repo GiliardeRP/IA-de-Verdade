@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giliarderp.github.io/IA-de-Verdade-/sitemap.xml

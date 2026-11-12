@@ -60,11 +60,10 @@ O Cloudflare Pages pode usar `CF_PAGES_URL` automaticamente no build.
 
 Produção **falha** se faltar:
 
-- URL pública;
-- checkout da coleção, Volume 1 e catálogo;
-- garantia confirmada + processo;
-- CPF/CNPJ, e-mail e políticas;
-- (opcional) Pixel.
+- políticas de privacidade, termos e reembolso;
+- URL pública (já configurada para GitHub Pages).
+
+Os 8 checkouts da Hotmart já estão configurados.
 
 Nada disso é inventado pelo build. O `dist/` entregue neste repositório é preview, sem canonical/sitemap de URL falsa.
 
@@ -109,10 +108,9 @@ O teste de validação cobre 320, 360, 390, 768, 1024 e 1440 px: altura, palavra
 
 ## Pendências para produção
 
-1. `site.url` ou `CF_PAGES_URL`.
-2. `checkout.collection`, `checkout.vol1`, `checkout.catalog`.
-3. `guarantee.confirmed` + `guarantee.process`.
-4. `legal.cpf`, `legal.email`, `legal.privacyUrl`, `legal.termsUrl`, `legal.refundUrl`.
-5. Pixel, se for medir.
+1. `legal.privacyUrl`, `legal.termsUrl` e `legal.refundUrl`.
+2. Anexar os arquivos EPUB na entrega da Hotmart.
+3. Configurar e testar o order bump, se for usar.
+4. Pixel, se for medir.
 
 O build não cria depoimentos, avaliações, escassez, bônus ou garantias.

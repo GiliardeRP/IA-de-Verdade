@@ -1,0 +1,17 @@
+# IA de Verdade
+
+> Coleção técnica em português sobre IA aplicada: seis volumes, 89 capítulos, catálogo de 1.323 skills e planilha XLSX. Do primeiro prompt ao próprio servidor.
+
+## O que inclui
+- 6 volumes: 1 Entendendo e usando IA; 2 Construindo software com IA; 3 Agentes, automações e IA aplicada; 4 Manuais OpenClaw e DSH; 5 Controle remoto e Home Lab; 6 Volume de Referência.
+- Catálogo de Skills em PDF (166 páginas) + planilha XLSX com 1.323 skills e 20 colunas.
+- 7 PDFs + 7 EPUBs + 1 planilha; 1.689 páginas no conjunto.
+
+## Preços
+- Coleção completa: R$ 197,00 (lançamento) / R$ 247,00 (regular).
+- Volume 1: R$ 39,90.
+- Volume 2: R$ 59,90; Volume 3: R$ 59,90; Volume 4: R$ 59,90; Volume 5: R$ 49,90; Volume 6: R$ 49,90.
+- Catálogo: R$ 69,90 individual; coleção: R$ 197,00.
+
+## Página
+https://giliarderp.github.io/IA-de-Verdade-/
