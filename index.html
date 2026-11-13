@@ -1009,10 +1009,10 @@ function formatCount(n) { return Number(n).toLocaleString('pt-BR'); }
 function animateCount(el) {
 var target = Number(el.getAttribute('data-count')) || 0;
 if (reduceMotion) { el.textContent = formatCount(target); return; }
-var start = performance.now(), dur = 700;
+var start = performance.now(), dur = 1800;
 function frame(now) {
 var t = Math.min(1, (now - start) / dur);
-var eased = 1 - Math.pow(1 - t, 3);
+var eased = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 el.textContent = formatCount(Math.round(target * eased));
 if (t < 1) requestAnimationFrame(frame);
 }
