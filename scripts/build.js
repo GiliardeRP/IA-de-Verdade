@@ -135,12 +135,12 @@ const legalColumn = legalLinks.length
   : '';
 
 const faqItems = [
-  ['O que é a coleção IA de Verdade?', 'Uma coleção de livros digitais em português sobre IA aplicada: seis volumes — cinco de percurso e um de referência — e um catálogo de Skills com planilha. Não é curso em vídeo, mentoria ou formação certificada.'],
-  ['Para quem o material foi feito?', 'Para quem já usa IA e quer aplicar de verdade, para quem programa e para quem quer um agente próprio ou um Home Lab.'],
-  ['Preciso saber programar?', 'Para o Volume 1, não. Do Volume 2 em diante, os exemplos usam terminal, Git, Python/Node/PHP e Docker. Familiaridade com código ajuda.'],
+  ['O que é a coleção IA de Verdade?', 'Uma coleção de livros digitais em português sobre IA aplicada. São seis volumes — cinco de percurso e um de referência — e um catálogo de Skills com planilha. Não é curso em vídeo, mentoria ou formação certificada.'],
+  ['Para quem o material foi feito?', 'Para quem já usa IA e quer aplicar de verdade, para quem programa e para quem quer um agente próprio ou um Home Lab. A seção Para quem é mostra os perfis.'],
+  ['Preciso saber programar?', 'Para o Volume 1, não. Do Volume 2 em diante, os exemplos usam terminal, Git, Python/Node/PHP e Docker. Familiaridade com código ajuda bastante.'],
   ['O que recebo na coleção completa?', 'Os seis volumes e o catálogo em PDF e EPUB, mais a planilha XLSX: 7 PDFs + 7 EPUBs + 1 planilha, 1.689 páginas no total. Entrega automática pela plataforma de checkout após a confirmação do pagamento.'],
-  ['Como recebo os arquivos?', 'A entrega é automática pela plataforma de checkout. Na coleção, 7 PDFs + 7 EPUBs + 1 planilha. No Volume 1, 1 PDF + 1 EPUB. No catálogo, 1 PDF + 1 EPUB + 1 planilha.'],
-  ['Posso comprar somente um volume?', 'Hoje o Volume 1 e o Catálogo têm oferta individual. Os Volumes 2 a 6 são vendidos na coleção completa; não há oferta avulsa deles nesta página.'],
+  ['Como recebo os arquivos?', 'A entrega é automática pela plataforma de checkout. Na coleção, você recebe 7 PDFs + 7 EPUBs + 1 planilha. No Volume 1, 1 PDF + 1 EPUB. No catálogo, 1 PDF + 1 EPUB + 1 planilha.'],
+  ['Posso comprar somente um volume?', 'Sim. Cada volume e o Catálogo têm oferta individual: Volume 1 por ' + money(p.vol1) + ', Volumes 2 a 4 por ' + money(p.vol2) + ' cada, Volumes 5 e 6 por ' + money(p.vol5) + ' cada e o Catálogo por ' + money(p.catalogIndividual) + '. A coleção completa reúne os sete itens por ' + money(p.collectionEffective) + '.'],
   ['Onde a compra é processada?', 'A compra é processada pela Hotmart. O acesso aos arquivos é liberado após a confirmação do pagamento, no formato definido pela plataforma.'],
   ['Como funciona a garantia?', 'A compra tem garantia de 7 dias pela Hotmart. O pedido de reembolso é feito pelos canais oficiais da plataforma, conforme as regras dela.'],
   ['O conteúdo é atualizado?', 'A edição é de novembro de 2026, com informações conferidas em 1º/11/2026. Esta oferta não inclui promessa de atualização gratuita ou vitalícia.'],

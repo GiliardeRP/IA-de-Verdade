@@ -137,9 +137,9 @@ module.exports = {
     company: '', // usado somente se entityType = 'pj'
     cnpj: '', // usado somente se entityType = 'pj'
     email: 'iadeverdade.oficial@gmail.com',
-    privacyUrl: '',
-    termsUrl: '',
-    refundUrl: '',
+    privacyUrl: 'https://giliarderp.github.io/IA-de-Verdade/privacidade.html',
+    termsUrl: 'https://giliarderp.github.io/IA-de-Verdade/termos.html',
+    refundUrl: 'https://giliarderp.github.io/IA-de-Verdade/reembolso.html',
   },
 
   tracking: {

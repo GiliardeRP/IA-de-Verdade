@@ -13,6 +13,9 @@ const today = new Date().toISOString().slice(0, 10);
 fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 fs.copyFileSync(path.join(root, 'index.html'), path.join(dist, 'index.html'));
+['privacidade.html', 'termos.html', 'reembolso.html'].forEach(function (file) {
+  fs.copyFileSync(path.join(root, file), path.join(dist, file));
+});
 fs.writeFileSync(path.join(dist, '.nojekyll'), '', 'utf8');
 fs.cpSync(path.join(root, 'assets'), path.join(dist, 'assets'), { recursive: true, filter: (src) => !src.includes('source-serif-4') });
 
@@ -22,6 +25,11 @@ fs.writeFileSync(path.join(dist, 'robots.txt'), [
 ].join('\n'), 'utf8');
 
 if (siteUrl) {
+  const legalPages = [
+    ['privacidade.html', '0.4', 'yearly'],
+    ['termos.html', '0.4', 'yearly'],
+    ['reembolso.html', '0.4', 'yearly'],
+  ];
   fs.writeFileSync(path.join(dist, 'sitemap.xml'), [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
@@ -31,6 +39,16 @@ if (siteUrl) {
     '    <changefreq>monthly</changefreq>',
     '    <priority>1.0</priority>',
     '  </url>',
+    ...legalPages.map(function (page) {
+      return [
+        '  <url>',
+        '    <loc>' + siteUrl + page[0] + '</loc>',
+        '    <lastmod>' + today + '</lastmod>',
+        '    <changefreq>' + page[2] + '</changefreq>',
+        '    <priority>' + page[1] + '</priority>',
+        '  </url>',
+      ].join('\n');
+    }),
     '</urlset>', '',
   ].join('\n'), 'utf8');
 } else {
