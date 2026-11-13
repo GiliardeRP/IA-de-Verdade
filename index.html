@@ -897,6 +897,18 @@ if (offer === 'vol4to5') return Number(p.vol4) + Number(p.vol5);
 if (/^vol[2-6]$/.test(offer)) return p[offer];
 return p.vol1;
 }
+function clearLoading(link) {
+if (!link) return;
+link.classList.remove('is-loading');
+link.removeAttribute('aria-busy');
+}
+function clearAllLoading() {
+$$('a[data-checkout].is-loading').forEach(clearLoading);
+}
+// Ao voltar do checkout pelo botão Voltar, a página pode ser restaurada do
+// cache ainda com o botão em "carregando" (pointer-events:none). Limpa o estado.
+addEventListener('pageshow', clearAllLoading);
+document.addEventListener('visibilitychange', function () { if (!document.hidden) clearAllLoading(); });
 function handleCheckout(e) {
 var link = e.target.closest('a[data-checkout]');
 if (!link) return;
@@ -915,8 +927,12 @@ return;
 e.preventDefault();
 var info = OFFER_INFO[offer] || OFFER_INFO.collection;
 trackEvent('InitiateCheckout', { content_name: info.name, content_type: 'product', content_ids: info.ids, value: offerValue(offer), num_items: 1 }, 'ic_' + Date.now());
+clearAllLoading();
 link.classList.add('is-loading');
 link.setAttribute('aria-busy', 'true');
+// Se a navegação não acontecer (aba em segundo plano, bloqueio do navegador),
+// o botão volta ao normal em vez de ficar travado.
+setTimeout(clearAllLoading, 10000);
 setTimeout(function () { location.href = url; }, 150);
 }
 document.addEventListener('click', handleCheckout);
