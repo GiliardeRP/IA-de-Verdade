@@ -141,6 +141,8 @@
     else if (offer === 'vol1') raw = cfg.checkout.vol1;
     else if (offer === 'vol1Bump') raw = cfg.checkout.vol1Bump || cfg.checkout.vol1;
     else if (offer === 'catalog') raw = cfg.checkout.catalog;
+    else if (offer === 'vol2to3') raw = cfg.checkout.vol2to3;
+    else if (offer === 'vol4to5') raw = cfg.checkout.vol4to5;
     else if (/^vol[2-6]$/.test(offer)) raw = cfg.checkout[offer];
     if (!raw || raw === '#') return '';
     var url;
@@ -243,12 +245,16 @@
     vol4: { name: 'Volume 4 — Manuais do OpenClaw e do DSH', ids: ['volume-4'] },
     vol5: { name: 'Volume 5 — Controle remoto e Home Lab', ids: ['volume-5'] },
     vol6: { name: 'Volume 6 — Referência', ids: ['volume-6'] },
+    vol2to3: { name: 'Volumes 2 e 3', ids: ['volume-2', 'volume-3'] },
+    vol4to5: { name: 'Volumes 4 e 5', ids: ['volume-4', 'volume-5'] },
     catalog: { name: 'Catálogo digital de Skills', ids: ['catalogo-skills'] }
   };
   function offerValue(offer) {
     var p = prices();
     if (offer === 'collection') return p.collectionEffective;
     if (offer === 'catalog') return p.catalogIndividual;
+    if (offer === 'vol2to3') return Number(p.vol2) + Number(p.vol3);
+    if (offer === 'vol4to5') return Number(p.vol4) + Number(p.vol5);
     if (/^vol[2-6]$/.test(offer)) return p[offer];
     return p.vol1;
   }
@@ -574,7 +580,7 @@
     var status = root.querySelector('[data-carousel-status]');
     if (!viewport || !track || !cards.length) return;
     var index = 0, timer = null, resumeTimer = null, hovering = false, focusInside = false;
-    var startX = 0, startY = 0, dragging = false, suppressClick = false;
+    var startX = 0, startY = 0, dragging = false, captured = false, suppressClick = false;
     var reduce = false;
     try { reduce = matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { /* sem matchMedia */ }
 
@@ -670,17 +676,30 @@
     viewport.addEventListener('pointerdown', function (e) {
       if (e.pointerType === 'mouse' && e.button !== 0) return;
       startX = e.clientX; startY = e.clientY; dragging = true; suppressClick = false;
-      try { viewport.setPointerCapture(e.pointerId); } catch (err) { /* sem captura */ }
+      // Sem captura aqui: capturar no pointerdown redireciona o click para o
+      // viewport e o link do produto nunca recebe o clique. A captura só entra
+      // quando o arrasto passa do limiar.
+    });
+    viewport.addEventListener('pointermove', function (e) {
+      if (!dragging || captured) return;
+      if (Math.abs(e.clientX - startX) > 10) {
+        captured = true;
+        try { viewport.setPointerCapture(e.pointerId); } catch (err) { /* sem captura */ }
+      }
     });
     viewport.addEventListener('pointerup', function (e) {
       if (!dragging) return;
       dragging = false;
+      if (captured) {
+        captured = false;
+        try { viewport.releasePointerCapture(e.pointerId); } catch (err) { /* sem captura */ }
+      }
       var dx = e.clientX - startX, dy = e.clientY - startY;
       if (Math.abs(dx) > 10) suppressClick = true;
       if (Math.abs(dx) > 42 && Math.abs(dx) > Math.abs(dy)) go(index + (dx < 0 ? 1 : -1), true);
       setTimeout(function () { suppressClick = false; }, 60);
     });
-    viewport.addEventListener('pointercancel', function () { dragging = false; });
+    viewport.addEventListener('pointercancel', function () { dragging = false; captured = false; });
     viewport.addEventListener('click', function (e) {
       if (suppressClick) { e.preventDefault(); e.stopPropagation(); }
     }, true);

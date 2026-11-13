@@ -19,7 +19,7 @@ module.exports = {
     // Domínio próprio (depois): 'https://iadeverdade.com.br/'
     // Também aceita a variável de ambiente IADV_SITE_URL no build.
     // Enquanto estiver vazia, canonical e Open Graph absoluto ficam pendentes.
-    url: 'https://giliarderp.github.io/IA-de-Verdade-/',
+    url: 'https://giliarderp.github.io/IA-de-Verdade/',
     ogImage: 'assets/og-image.jpg',
     locale: 'pt_BR',
   },
@@ -88,14 +88,18 @@ module.exports = {
   // veja docs/INTEGRACAO.md e docs/PLATAFORMAS-CHECKOUT.md.
   checkout: {
     collection: 'https://pay.hotmart.com/Y108454666M',
-    vol1: 'https://pay.hotmart.com/K108455234J',
+    vol1: 'https://pay.hotmart.com/K108455234J?checkoutMode=10',
     vol1Bump: '', // checkout do Volume 1 com o order bump habilitado (se existir)
-    vol2: 'https://pay.hotmart.com/S108455306U',
-    vol3: 'https://pay.hotmart.com/G108455378B',
-    vol4: 'https://pay.hotmart.com/X108455419L',
-    vol5: 'https://pay.hotmart.com/A108455456E',
-    vol6: 'https://pay.hotmart.com/W108455501U',
-    catalog: 'https://pay.hotmart.com/N108455530M',
+    vol2: 'https://pay.hotmart.com/S108455306U?checkoutMode=10&bid=1794534005437',
+    vol3: 'https://pay.hotmart.com/G108455378B?checkoutMode=10&bid=1794534080878',
+    vol4: 'https://pay.hotmart.com/X108455419L?checkoutMode=10',
+    vol5: 'https://pay.hotmart.com/A108455456E?checkoutMode=10&bid=1794534142153',
+    vol6: 'https://pay.hotmart.com/W108455501U?checkoutMode=10&bid=1794534218201',
+    catalog: 'https://pay.hotmart.com/N108455530M?checkoutMode=10&bid=1794534241761',
+    // "Escolha o seu ponto de partida": checkout do Vol. 2 com o Vol. 3 como
+    // order bump (-20%) e do Vol. 4 com o Vol. 5. Conferido em 13/11/2026.
+    vol2to3: 'https://pay.hotmart.com/S108455306U?off=9ddse0n8&checkoutMode=10',
+    vol4to5: 'https://pay.hotmart.com/X108455419L?off=4ervwqvk&checkoutMode=10',
   },
 
   sample: {

@@ -232,6 +232,8 @@ const tokens = {
   'checkout.vol4': checkoutUrl('vol4'),
   'checkout.vol5': checkoutUrl('vol5'),
   'checkout.vol6': checkoutUrl('vol6'),
+  'checkout.vol2to3': checkoutUrl('vol2to3'),
+  'checkout.vol4to5': checkoutUrl('vol4to5'),
   'checkout.catalog': checkoutUrl('catalog'),
   'sample.path': esc(cfg.sample && cfg.sample.enabled ? cfg.sample.path : '#'),
   'delivery.note': deliveryNote,
